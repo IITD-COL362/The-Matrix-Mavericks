@@ -1,0 +1,75 @@
+Restaurant Table:
+# Restaurant_id: a unique identifier for each restaurant in the database
+# Name: the name of the restaurant
+# City_id: a foreign key linking to the city table, indicating which city the restaurant is located in
+# Address: the physical address of the restaurant
+# Latitude: the latitude of the restaurant's location
+# Longitude: the longitude of the restaurant's location
+# Avg_cost_for_two: the average cost for two people to dine at the restaurant
+# Has_table_booking: a binary attribute indicating whether the restaurant takes table bookings or not
+# Has_online_delivery: a binary attribute indicating whether the restaurant offers online delivery or not
+# Is_delivering_now: a binary attribute indicating whether the restaurant is currently delivering food or not
+# Switch_to_order_menu: a link to the restaurant's online ordering system
+# Aggregate_rating: the average rating of the restaurant, based on customer reviews
+# Votes: the number of customer reviews that have been left for the restaurant
+
+Avg Cost for Two Table:
+# High: The highest price for which the restaurant lies in this range
+# Low: The lowest price for which the restaurant lies in this range
+# Price_range: a description of the price range, e.g. “low budget”,"budget", "mid-range","fine dining", “royal”
+
+Rating Table:
+# Rating: the numerical rating assigned to a restaurant, e.g. 4.5 out of 5 stars
+# Rating_colour: a visual representation of the rating, e.g. a color-coded system that uses green for high ratings and red for low ratings
+
+Restaurant Cuisine Table:
+# Restaurant_id: a foreign key linking to the restaurant table, indicating which restaurant the cuisine is associated with
+# Cuisine_id: a foreign key linking to the cuisine table, indicating which type of cuisine the restaurant specializes in
+
+City Table:
+# City_id: a unique identifier for each city in the database
+# Country_name: the name of the country the city is located in
+
+Country Currency Table:
+# Country_name: a unique identifier for each country in the database
+# Currency_id: the code for the currency used in the country
+
+Food Table:
+# Food_id: a unique identifier for each food item in the database
+# Food_name: the name of the food item
+# Cuisine_id: a foreign key linking to the cuisine table, indicating which type of cuisine the food item belongs to
+# Calories: the number of calories in the food item per 100 g of food item
+# Fat: the amount of fat in the food item per 100 g of food item
+# Carbohydrates: the amount of carbohydrates in the food item per 100 g of food item
+# Protein: the amount of protein in the food item per 100 g of food item
+# Sodium: the amount of sodium in the food item per 100 g of food item
+# Meal_type_id: a foreign key linking to the meal type details table, indicating which meal type the food item is associated 
+# Veg_non_veg: a binary attribute indicating whether the food item is vegetarian or non-vegetarian
+
+Meal Table:
+# Meal_id: a unique identifier for each meal in the database
+# Meal_type_id: a foreign key linking to the meal type details table, indicating which meal type the meal is associated with (we have following 8 types : Fruits, Wheat based, Rice based, Meat based, Sea food based, Salad based, Milk based, Junk)
+# Person_id: a foreign key linking to the user table, indicating which person the meal is associated with
+# Meal_time: the time of day the meal was eaten 
+# Meal_date: the date the meal was eaten
+# Entry_type: a binary attribute indicating whether the meal was automatically tracked from site or added manually
+
+Meal Type Details Table
+# Meal_type_id: unique identifier for the meal type
+# Meal_type_score: a score assigned to the meal type based on its healthiness or other criteria
+
+Currency Table
+# Currency_id: unique identifier for the currency
+# Inr_conversion: the conversion rate from the local currency to Indian Rupees
+
+User Table
+# User_id: unique identifier for the user
+# Name: the name of the user
+# Address: the address of the user
+# City_id: the identifier of the city where the user lives
+# Mail_id: the email address of the user
+# Phone_number: the phone number of the user
+# Birthday: the date of birth of the user
+# Sex: the gender of the user
+# Weight: the weight of the user
+# Account_creation_date: the date when the user's account was created
