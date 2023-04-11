@@ -58,8 +58,7 @@ CREATE TABLE User_data (
     birthday date,
     sex varchar(1) check (sex in ('M','F','O')),
     weight int,
-    account_creation_date date not null,
-    CONSTRAINT valid_email CHECK (mail_id ~* '^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$')
+    account_creation_date date not null
 );
 
 CREATE TABLE Restaurant (
