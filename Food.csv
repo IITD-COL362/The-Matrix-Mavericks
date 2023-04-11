@@ -1805,108 +1805,108 @@ Food_id,Food_name,Cuisine_id,Calories,Fat,Carbohydrates,Protein,Sodium,Meal_type
 1804,Kombdi masala,Malwani,286,15,9,28,612,Meat based,NV,300
 1805,Mori aambat,Malwani,173,8,7,20,455,Sea food based,NV,300
 1806,Sol kadi,Malwani,65,4,4,1,60,Beverage,V,50
-1807,Poke bowl,Hawaiian,110,1.5,20,8,200,Salad based,Non-Veg,10
-1808,Lomi salmon,Hawaiian,150,8,8,10,250,Sea food based,Non-Veg,8
-1809,Kalua pork,Hawaiian,320,18,0,38,700,Meat based,Non-Veg,15
-1810,Haupia,Hawaiian,180,5,30,1,60,Milk based,Vegetarian based,5
-1811,Spam musubi,Hawaiian,170,8,20,7,600,Rice based,Non-Veg,4
-1812,Malasadas,Hawaiian,350,16,46,6,180,Wheat based,Vegetarian based,8
-1813,Ahi poke,Hawaiian,150,1.5,5,30,200,Sea food based,Non-Veg,12
-1814,Manapua,Hawaiian,300,6,49,11,680,Wheat based,Non-Veg,6
-1815,Lau lau,Hawaiian,400,20,0,50,1000,Meat based,Non-Veg,18
-1816,Loco moco,Hawaiian,500,26,35,30,1000,Rice based,Non-Veg,10
-1817,Poi,Hawaiian,140,0,32,1,20,Wheat based,Vegetarian based,5
-1818,Shave ice,Hawaiian,80,0,20,0,0,Fruits,Vegetarian based,3
-1819,Huli huli chicken,Hawaiian,220,5,12,30,350,Meat based,Non-Veg,12
-1820,Pipikaula,Hawaiian,240,8,6,36,500,Meat based,Non-Veg,14
-1821,Sweet potato,Hawaiian,86,0.1,20,2,41,Fruits,Vegetarian based,4
-1822,Chettinad Chicken,Chettinad,180,7,3,26,200,Meat based,Non-Veg,250
-1823,Kuzhi Paniyaram,Chettinad,180,7,25,5,300,Rice based,Vegetarian based,100
-1824,Vellai Paniyaram,Chettinad,220,5,35,3,320,Wheat based,Vegetarian based,80
-1825,Chettinad Fish Fry,Chettinad,250,14,10,22,420,Sea food based,Non-Veg,350
-1826,Chicken Chukka,Chettinad,280,15,10,28,300,Meat based,Non-Veg,280
-1827,Vatha Kuzhambu,Chettinad,180,5,25,8,200,Salad based,Vegetarian based,150
-1828,Pepper Chicken,Chettinad,230,12,10,20,400,Meat based,Non-Veg,300
-1829,Chettinad Egg Masala,Chettinad,150,6,5,20,200,Meat based,Non-Veg,200
-1830,Keerai Masial,Chettinad,100,3,10,6,150,Salad based,Vegetarian based,100
-1831,Karuveppilai Kuzhambu,Chettinad,120,5,20,2,200,Salad based,Vegetarian based,150
-1832,Chettinad Mutton Kuzhambu,Chettinad,250,18,5,25,400,Meat based,Non-Veg,400
-1833,Chettinad Chicken Gravy,Chettinad,200,8,5,26,250,Meat based,Non-Veg,250
-1834,Kola Urundai Kuzhambu,Chettinad,180,5,25,8,200,Meat based,Non-Veg,220
-1835,Chettinad Vegetable Kurma,Chettinad,150,8,10,10,300,Salad based,Vegetarian based,180
-1836,Chettinad Parotta,Chettinad,200,10,25,5,250,Wheat based,Vegetarian based,40
-1837,Jambalaya,Cajun,150,7,10,10,300,Rice based,Non-Veg,200
-1838,Gumbo,Cajun,180,10,15,12,400,Salad based,Non-Veg,250
-1839,Crawfish Étouffée,Cajun,200,12,10,18,350,Rice based,Non-Veg,300
-1840,Andouille Sausage,Cajun,280,20,5,20,500,Meat based,Non-Veg,350
-1841,Red Beans and Rice,Cajun,220,7,40,10,400,Rice based,Vegetarian based,150
-1842,Shrimp Creole,Cajun,190,10,15,12,400,Sea food based,Non-Veg,300
-1843,Dirty Rice,Cajun,240,12,25,10,450,Rice based,Non-Veg,200
-1844,Catfish Po' Boy,Cajun,300,15,35,20,600,Wheat based,Non-Veg,250
-1845,Blackened Chicken,Cajun,180,7,5,20,300,Meat based,Non-Veg,200
-1846,Muffuletta,Cajun,350,18,25,25,800,Wheat based,Non-Veg,400
-1847,Shrimp and Grits,Cajun,250,10,20,20,400,Rice based,Non-Veg,350
-1848,Boudin,Cajun,220,10,15,15,400,Meat based,Non-Veg,200
-1849,Chicken and Sausage Gumbo,Cajun,200,12,10,18,350,Salad based,Non-Veg,300
-1850,Alligator Meatballs,Cajun,240,15,10,20,500,Meat based,Non-Veg,400
-1851,Shrimp and Crab Étouffée,Cajun,250,15,10,20,450,Rice based,Non-Veg,400
-1852,Jerk Chicken,Caribbean,250,10,5,30,500,Meat based,Non-Veg,300
-1853,Goat Curry,Caribbean,300,15,20,25,800,Meat based,Non-Veg,400
-1854,Rice and Peas,Caribbean,180,5,35,10,300,Rice based,Vegetarian based,150
-1855,Ackee and Saltfish,Caribbean,220,10,10,25,400,Sea food based,Non-Veg,200
-1856,Callaloo Soup,Caribbean,100,2,15,5,200,Salad based,Vegetarian based,150
-1857,Conch Fritters,Caribbean,200,10,20,15,400,Sea food based,Non-Veg,250
-1858,Curry Goat,Caribbean,280,15,20,25,700,Meat based,Non-Veg,350
-1859,Fried Plantains,Caribbean,200,10,20,2,300,Fruits,Vegetarian based,100
-1860,Escovitch Fish,Caribbean,220,12,10,20,400,Sea food based,Non-Veg,300
-1861,Pepperpot,Caribbean,250,10,20,25,500,Meat based,Non-Veg,350
-1862,Curry Chicken,Caribbean,200,10,10,25,500,Meat based,Non-Veg,250
-1863,Doubles,Caribbean,250,10,20,5,350,Wheat based,Vegetarian based,50
-1864,Oxtail Stew,Caribbean,350,20,25,30,1000,Meat based,Non-Veg,450
-1865,Fried Dumplings,Caribbean,200,10,20,5,300,Wheat based,Vegetarian based,50
-1866,Fish and Bammy,Caribbean,200,10,20,15,400,Sea food based,Non-Veg,300
-1867,Rogan Josh,Kashmiri,220,11,10,20,300,Meat based,Non-Veg,400
-1868,Gushtaba,Kashmiri,280,16,12,22,450,Meat based,Non-Veg,500
-1869,Kashmiri Pulao,Kashmiri,280,10,40,8,350,Rice based,Vegetarian based,200
-1870,Yakhni,Kashmiri,100,5,10,5,150,Meat based,Non-Veg,250
-1871,Dum Olav,Kashmiri,150,8,12,8,200,Vegetarian based,Vegetarian based,300
-1872,Kashmiri Rajma,Kashmiri,180,6,25,7,250,Wheat based,Vegetarian based,150
-1873,Nadir Yakhni,Kashmiri,120,6,8,8,150,Vegetarian based,Vegetarian based,200
-1874,Matschgand,Kashmiri,200,12,10,18,350,Meat based,Non-Veg,450
-1875,Tschok Wangan,Kashmiri,100,5,12,2,150,Vegetarian based,Vegetarian based,150
-1876,Modur Pulao,Kashmiri,300,10,45,5,400,Rice based,Vegetarian based,300
-1877,Rista,Kashmiri,200,12,5,20,300,Meat based,Non-Veg,350
-1878,Kashmiri Kebab,Kashmiri,180,10,5,18,250,Meat based,Non-Veg,400
-1879,Shab Deg,Kashmiri,200,12,10,20,300,Meat based,Non-Veg,450
-1880,Daniwal Korma,Kashmiri,220,10,12,25,350,Meat based,Non-Veg,400
-1881,Khameera Roti,Kashmiri,120,4,15,3,150,Wheat based,Vegetarian based,50
-1882,Bibimbap,Korean,350,8,50,15,700,Rice based,Veg/Non-Veg,300
-1883,Bulgogi,Korean,250,8,10,20,500,Meat based,Non-Veg,600
-1884,Kimchi,Korean,15,0.3,3,1,800,Vegetarian based,Vegetarian based,100
-1885,Haemul Pajeon,Korean,250,10,20,15,800,Sea food based,Non-Veg,400
-1886,Samgyeopsal,Korean,280,20,5,15,700,Meat based,Non-Veg,500
-1887,Doenjang Jjigae,Korean,120,4,15,10,600,Vegetarian based,Vegetarian based,200
-1888,Japchae,Korean,400,12,60,10,500,Wheat based,Veg/Non-Veg,300
-1889,Bokkeumbap,Korean,400,10,70,20,600,Rice based,Veg/Non-Veg,250
-1890,Dak Galbi,Korean,350,15,20,20,700,Meat based,Non-Veg,500
-1891,Bibim Guksu,Korean,350,5,60,10,500,Wheat based,Veg/Non-Veg,250
-1892,Naengmyeon,Korean,200,2,45,10,600,Wheat based,Veg/Non-Veg,350
-1893,Jeonbokjuk,Korean,100,5,10,5,200,Sea food based,Non-Veg,300
-1894,Jjajangmyeon,Korean,500,20,50,15,900,Wheat based,Veg/Non-Veg,400
-1895,Soondubu Jjigae,Korean,150,10,5,10,500,Vegetarian based,Veg/Non-Veg,200
-1896,Hotteok,Korean,300,10,40,5,200,Wheat based,Vegetarian based,50
-1897,Banh Mi Sandwich,Asian Fusion,350,10,50,20,800,Wheat based,Non-Veg,300
-1898,Chicken Teriyaki Rice Bowl,Asian Fusion,400,10,60,25,900,Rice based,Non-Veg,500
-1899,Pad Thai,Asian Fusion,450,15,65,15,1000,Rice based,Veg/Non-Veg,350
-1900,California Roll,Asian Fusion,250,5,45,5,500,Sea food based,Non-Veg,400
-1901,Korean Fried Chicken,Asian Fusion,300,15,20,20,800,Meat based,Non-Veg,450
-1902,Buddha Bowl,Asian Fusion,350,10,50,20,600,Salad based,Veg/Non-Veg,400
-1903,Lamb Kofta Kebabs,Asian Fusion,300,15,10,30,800,Meat based,Non-Veg,600
-1904,Thai Green Curry,Asian Fusion,300,15,20,15,700,Rice based,Veg/Non-Veg,400
-1905,Crispy Pork Belly Ramen,Asian Fusion,500,20,60,25,1200,Junk food,Non-Veg,700
-1906,Tandoori Chicken Tacos,Asian Fusion,250,10,25,15,500,Wheat based,Non-Veg,350
-1907,Soba Noodle Salad,Asian Fusion,200,5,35,10,300,Junk food,Veg/Non-Veg,250
-1908,Beef Bulgogi Tacos,Asian Fusion,350,15,20,25,800,Wheat based,Non-Veg,500
-1909,Vietnamese Summer Rolls,Asian Fusion,100,3,15,5,200,Vegetarian based,Veg/Non-Veg,200
-1910,Peking Duck Bao,Asian Fusion,350,10,50,15,600,Wheat based,Non-Veg,450
-1911,Crispy Tofu Poke Bowl,Asian Fusion,300,10,45,15,500,Rice based,Vegetarian based,400
+1807,Poke bowl,Hawaiian,110,1.5,20,8,200,Salad based,NV,10
+1808,Lomi salmon,Hawaiian,150,8,8,10,250,Sea food based,NV,8
+1809,Kalua pork,Hawaiian,320,18,0,38,700,Meat based,NV,15
+1810,Haupia,Hawaiian,180,5,30,1,60,Milk based,V,5
+1811,Spam musubi,Hawaiian,170,8,20,7,600,Rice based,NV,4
+1812,Malasadas,Hawaiian,350,16,46,6,180,Wheat based,V,8
+1813,Ahi poke,Hawaiian,150,1.5,5,30,200,Sea food based,NV,12
+1814,Manapua,Hawaiian,300,6,49,11,680,Wheat based,NV,6
+1815,Lau lau,Hawaiian,400,20,0,50,1000,Meat based,NV,18
+1816,Loco moco,Hawaiian,500,26,35,30,1000,Rice based,NV,10
+1817,Poi,Hawaiian,140,0,32,1,20,Wheat based,V,5
+1818,Shave ice,Hawaiian,80,0,20,0,0,Fruits,V,3
+1819,Huli huli chicken,Hawaiian,220,5,12,30,350,Meat based,NV,12
+1820,Pipikaula,Hawaiian,240,8,6,36,500,Meat based,NV,14
+1821,Sweet potato,Hawaiian,86,0.1,20,2,41,Fruits,V,4
+1822,Chettinad Chicken,Chettinad,180,7,3,26,200,Meat based,NV,250
+1823,Kuzhi Paniyaram,Chettinad,180,7,25,5,300,Rice based,V,100
+1824,Vellai Paniyaram,Chettinad,220,5,35,3,320,Wheat based,V,80
+1825,Chettinad Fish Fry,Chettinad,250,14,10,22,420,Sea food based,NV,350
+1826,Chicken Chukka,Chettinad,280,15,10,28,300,Meat based,NV,280
+1827,Vatha Kuzhambu,Chettinad,180,5,25,8,200,Salad based,V,150
+1828,Pepper Chicken,Chettinad,230,12,10,20,400,Meat based,NV,300
+1829,Chettinad Egg Masala,Chettinad,150,6,5,20,200,Meat based,NV,200
+1830,Keerai Masial,Chettinad,100,3,10,6,150,Salad based,V,100
+1831,Karuveppilai Kuzhambu,Chettinad,120,5,20,2,200,Salad based,V,150
+1832,Chettinad Mutton Kuzhambu,Chettinad,250,18,5,25,400,Meat based,NV,400
+1833,Chettinad Chicken Gravy,Chettinad,200,8,5,26,250,Meat based,NV,250
+1834,Kola Urundai Kuzhambu,Chettinad,180,5,25,8,200,Meat based,NV,220
+1835,Chettinad Vegetable Kurma,Chettinad,150,8,10,10,300,Salad based,V,180
+1836,Chettinad Parotta,Chettinad,200,10,25,5,250,Wheat based,V,40
+1837,Jambalaya,Cajun,150,7,10,10,300,Rice based,NV,200
+1838,Gumbo,Cajun,180,10,15,12,400,Salad based,NV,250
+1839,Crawfish Étouffée,Cajun,200,12,10,18,350,Rice based,NV,300
+1840,Andouille Sausage,Cajun,280,20,5,20,500,Meat based,NV,350
+1841,Red Beans and Rice,Cajun,220,7,40,10,400,Rice based,V,150
+1842,Shrimp Creole,Cajun,190,10,15,12,400,Sea food based,NV,300
+1843,Dirty Rice,Cajun,240,12,25,10,450,Rice based,NV,200
+1844,Catfish Po' Boy,Cajun,300,15,35,20,600,Wheat based,NV,250
+1845,Blackened Chicken,Cajun,180,7,5,20,300,Meat based,NV,200
+1846,Muffuletta,Cajun,350,18,25,25,800,Wheat based,NV,400
+1847,Shrimp and Grits,Cajun,250,10,20,20,400,Rice based,NV,350
+1848,Boudin,Cajun,220,10,15,15,400,Meat based,NV,200
+1849,Chicken and Sausage Gumbo,Cajun,200,12,10,18,350,Salad based,NV,300
+1850,Alligator Meatballs,Cajun,240,15,10,20,500,Meat based,NV,400
+1851,Shrimp and Crab Étouffée,Cajun,250,15,10,20,450,Rice based,NV,400
+1852,Jerk Chicken,Caribbean,250,10,5,30,500,Meat based,NV,300
+1853,Goat Curry,Caribbean,300,15,20,25,800,Meat based,NV,400
+1854,Rice and Peas,Caribbean,180,5,35,10,300,Rice based,V,150
+1855,Ackee and Saltfish,Caribbean,220,10,10,25,400,Sea food based,NV,200
+1856,Callaloo Soup,Caribbean,100,2,15,5,200,Salad based,V,150
+1857,Conch Fritters,Caribbean,200,10,20,15,400,Sea food based,NV,250
+1858,Curry Goat,Caribbean,280,15,20,25,700,Meat based,NV,350
+1859,Fried Plantains,Caribbean,200,10,20,2,300,Fruits,V,100
+1860,Escovitch Fish,Caribbean,220,12,10,20,400,Sea food based,NV,300
+1861,Pepperpot,Caribbean,250,10,20,25,500,Meat based,NV,350
+1862,Curry Chicken,Caribbean,200,10,10,25,500,Meat based,NV,250
+1863,Doubles,Caribbean,250,10,20,5,350,Wheat based,V,50
+1864,Oxtail Stew,Caribbean,350,20,25,30,1000,Meat based,NV,450
+1865,Fried Dumplings,Caribbean,200,10,20,5,300,Wheat based,V,50
+1866,Fish and Bammy,Caribbean,200,10,20,15,400,Sea food based,NV,300
+1867,Rogan Josh,Kashmiri,220,11,10,20,300,Meat based,NV,400
+1868,Gushtaba,Kashmiri,280,16,12,22,450,Meat based,NV,500
+1869,Kashmiri Pulao,Kashmiri,280,10,40,8,350,Rice based,V,200
+1870,Yakhni,Kashmiri,100,5,10,5,150,Meat based,NV,250
+1871,Dum Olav,Kashmiri,150,8,12,8,200,Vegetarian based,V,300
+1872,Kashmiri Rajma,Kashmiri,180,6,25,7,250,Wheat based,V,150
+1873,Nadir Yakhni,Kashmiri,120,6,8,8,150,Vegetarian based,V,200
+1874,Matschgand,Kashmiri,200,12,10,18,350,Meat based,NV,450
+1875,Tschok Wangan,Kashmiri,100,5,12,2,150,Vegetarian based,V,150
+1876,Modur Pulao,Kashmiri,300,10,45,5,400,Rice based,V,300
+1877,Rista,Kashmiri,200,12,5,20,300,Meat based,NV,350
+1878,Kashmiri Kebab,Kashmiri,180,10,5,18,250,Meat based,NV,400
+1879,Shab Deg,Kashmiri,200,12,10,20,300,Meat based,NV,450
+1880,Daniwal Korma,Kashmiri,220,10,12,25,350,Meat based,NV,400
+1881,Khameera Roti,Kashmiri,120,4,15,3,150,Wheat based,V,50
+1882,Bibimbap,Korean,350,8,50,15,700,Rice based,V,300
+1883,Bulgogi,Korean,250,8,10,20,500,Meat based,NV,600
+1884,Kimchi,Korean,15,0.3,3,1,800,Vegetarian based,V,100
+1885,Haemul Pajeon,Korean,250,10,20,15,800,Sea food based,NV,400
+1886,Samgyeopsal,Korean,280,20,5,15,700,Meat based,NV,500
+1887,Doenjang Jjigae,Korean,120,4,15,10,600,Vegetarian based,V,200
+1888,Japchae,Korean,400,12,60,10,500,Wheat based,V,300
+1889,Bokkeumbap,Korean,400,10,70,20,600,Rice based,V,250
+1890,Dak Galbi,Korean,350,15,20,20,700,Meat based,NV,500
+1891,Bibim Guksu,Korean,350,5,60,10,500,Wheat based,V,250
+1892,Naengmyeon,Korean,200,2,45,10,600,Wheat based,V,350
+1893,Jeonbokjuk,Korean,100,5,10,5,200,Sea food based,NV,300
+1894,Jjajangmyeon,Korean,500,20,50,15,900,Wheat based,V,400
+1895,Soondubu Jjigae,Korean,150,10,5,10,500,Vegetarian based,V,200
+1896,Hotteok,Korean,300,10,40,5,200,Wheat based,V,50
+1897,Banh Mi Sandwich,Asian Fusion,350,10,50,20,800,Wheat based,NV,300
+1898,Chicken Teriyaki Rice Bowl,Asian Fusion,400,10,60,25,900,Rice based,NV,500
+1899,Pad Thai,Asian Fusion,450,15,65,15,1000,Rice based,V,350
+1900,California Roll,Asian Fusion,250,5,45,5,500,Sea food based,NV,400
+1901,Korean Fried Chicken,Asian Fusion,300,15,20,20,800,Meat based,NV,450
+1902,Buddha Bowl,Asian Fusion,350,10,50,20,600,Salad based,V,400
+1903,Lamb Kofta Kebabs,Asian Fusion,300,15,10,30,800,Meat based,NV,600
+1904,Thai Green Curry,Asian Fusion,300,15,20,15,700,Rice based,V,400
+1905,Crispy Pork Belly Ramen,Asian Fusion,500,20,60,25,1200,Junk food,NV,700
+1906,Tandoori Chicken Tacos,Asian Fusion,250,10,25,15,500,Wheat based,NV,350
+1907,Soba Noodle Salad,Asian Fusion,200,5,35,10,300,Junk food,V,250
+1908,Beef Bulgogi Tacos,Asian Fusion,350,15,20,25,800,Wheat based,NV,500
+1909,Vietnamese Summer Rolls,Asian Fusion,100,3,15,5,200,Vegetarian based,V,200
+1910,Peking Duck Bao,Asian Fusion,350,10,50,15,600,Wheat based,NV,450
+1911,Crispy Tofu Poke Bowl,Asian Fusion,300,10,45,15,500,Rice based,V,400

@@ -158,11 +158,9 @@ Restaurant_id,Cuisine_id
 17284404,Seafood
 17284203,American
 17284203,BBQ
-17284105,
 17284302,Mexican
 17284397,Coffee and Tea
 17284397,Sandwich
-17284211,
 17284094,Fast Food
 17284409,Asian
 17284409,Chinese
@@ -177,7 +175,6 @@ Restaurant_id,Cuisine_id
 17284145,Seafood
 17284145,Vegetarian
 17284150,Chinese
-17284158,
 17284175,American
 17284175,Burger
 17284175,Sandwich
@@ -587,7 +584,6 @@ Restaurant_id,Cuisine_id
 17375164,American
 17375164,Burger
 17375164,Cajun
-17374552,
 17375078,BBQ
 17375049,Chinese
 17375049,Japanese
@@ -651,7 +647,6 @@ Restaurant_id,Cuisine_id
 17500911,Burger
 17500911,Desserts
 17500911,Bar Food
-17501439,
 17501279,American
 17501279,Seafood
 17500695,Steak
@@ -690,7 +685,6 @@ Restaurant_id,Cuisine_id
 17482142,Burger
 16609169,Bar Food
 16609169,Modern Australian
-17606621,
 17687832,Italian
 17687832,Pizza
 16613059,Coffee and Tea
@@ -733,7 +727,6 @@ Restaurant_id,Cuisine_id
 17061253,American
 17061253,Breakfast
 17061253,Vegetarian
-17059060,
 17061231,Pub Food
 16613649,Mediterranean
 16613649,Seafood
@@ -842,7 +835,6 @@ Restaurant_id,Cuisine_id
 17143970,American
 17143970,Pizza
 17143970,Bar Food
-17142698,
 17144991,Seafood
 17142519,American
 17142519,Hawaiian
@@ -921,7 +913,6 @@ Restaurant_id,Cuisine_id
 17616205,Southern
 17616222,American
 17616295,Seafood
-17616465,
 18483372,Chinese
 18483372,Continental
 18483372,Singaporean
@@ -3048,7 +3039,6 @@ Restaurant_id,Cuisine_id
 18451182,Continental
 18384142,Beverages
 18384142,Salad
-18384142,Beverages
 18241498,Healthy Food
 18241498,North Indian
 18241498,Continental
@@ -4735,7 +4725,6 @@ Restaurant_id,Cuisine_id
 18291198,Charcoal Grill
 18446404,Bakery
 18446404,Desserts
-18446404,Bakery
 6690,Cafe
 306032,North Indian
 306032,Chinese
@@ -17860,7 +17849,6 @@ Restaurant_id,Cuisine_id
 18478971,Chinese
 18439535,North Indian
 18439535,Mughlai
-18439535,Mughlai
 307974,North Indian
 307974,Chinese
 18430884,North Indian
@@ -18913,7 +18901,6 @@ Restaurant_id,Cuisine_id
 2700007,North Indian
 2700007,Chinese
 2700007,South Indian
-2700007,Chinese
 2700019,Continental
 2700019,North Indian
 2700019,European
@@ -18929,7 +18916,6 @@ Restaurant_id,Cuisine_id
 2700085,North Indian
 2700085,Chinese
 2700085,South Indian
-2700085,Chinese
 2700241,Cafe
 2700241,Italian
 2700241,Mexican

@@ -8,4 +8,4 @@ COPY Food from '/home/aman/Desktop/AA/COL362/Project/Food.csv' DELIMITER ',' CSV
 COPY Meal from '/home/aman/Desktop/AA/COL362/Project/Meal.csv' DELIMITER ',' CSV HEADER;
 COPY Meal_Type_Details from '/home/aman/Desktop/AA/COL362/Project/Meal_type_details.csv' DELIMITER ',' CSV HEADER;
 COPY Currency from '/home/aman/Desktop/AA/COL362/Project/currency.csv' DELIMITER ',' CSV HEADER;
-COPY User from '/home/aman/Desktop/AA/COL362/Project/User.csv' DELIMITER ',' CSV HEADER;
+COPY User_data from '/home/aman/Desktop/AA/COL362/Project/User.csv' DELIMITER ',' CSV HEADER;

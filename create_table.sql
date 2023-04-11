@@ -8,7 +8,7 @@ DROP TABLE IF EXISTS Food;
 DROP TABLE IF EXISTS Meal;
 DROP TABLE IF EXISTS Meal_Type_Details;
 DROP TABLE IF EXISTS Currency;
-DROP TABLE IF EXISTS User;
+DROP TABLE IF EXISTS User_data;
 
 
 CREATE TABLE Restaurant (
@@ -23,7 +23,7 @@ CREATE TABLE Restaurant (
     has_online_delivery varchar(3) ,
     is_delivering_now varchar(3) ,
     switch_to_order_menu varchar(3) ,
-    aggregate_rating int ,
+    aggregate_rating float ,
     votes int
 ) ;
 
@@ -35,7 +35,7 @@ CREATE TABLE Avg_Cost_for_Two (
 ) ;
 
 CREATE TABLE Rating (
-    rating int PRIMARY KEY,
+    rating float PRIMARY KEY,
     rating_colour varchar(11) NOT NULL
 ) ;
 
@@ -90,7 +90,7 @@ CREATE TABLE Currency (
 ) ;
 
 
-CREATE TABLE User (
+CREATE TABLE User_data (
     user_id int primary key,
     name varchar not null,
     address varchar,
