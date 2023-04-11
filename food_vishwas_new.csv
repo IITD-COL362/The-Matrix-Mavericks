@@ -1,0 +1,685 @@
+Food id,Food name,Cuisine name,Calories (in kcal),Fat (in g),Carbohydrates (in g),Protein (in g),Sodium (in mg),Meal type,Veg non veg,Expected price (in INR)
+1,Pad Thai,Thai,190,4.8,26.4,7.7,350,Rice based,NV,200
+2,Tom Yum Soup,Thai,30,0.5,5,2,125,Sea food based,NV,150
+3,Green Curry,Thai,118,6.2,14,1.9,300,Meat based,NV,250
+4,Papaya Salad,Thai,56,0.5,12,2.5,200,Salad based,V,100
+5,Massaman Curry,Thai,186,10.3,20,3.3,275,Meat based,NV,300
+6,Spring Rolls,Thai,305,6.2,46.3,12.3,650,Wheat based,V,150
+7,Mango Sticky Rice,Thai,153,2,33.6,1.7,25,Rice based,V,100
+8,Satay,Thai,312,24.5,9.8,13.5,500,Meat based,NV,200
+9,Panang Curry,Thai,183,10.6,18.6,3.3,225,Meat based,NV,250
+10,Kai Med Ma Muang,Thai,220,13.7,11.9,11.8,375,Meat based,NV,300
+11,Khao Pad,Thai,171,6.1,25.2,3.4,275,Rice based,NV,150
+12,Laab,Thai,210,11,8,22,350,Meat based,NV,200
+13,Pad See Ew,Thai,215,7.3,34,4.7,400,Wheat based,NV,250
+14,Red Curry,Thai,118,6.2,14,1.9,300,Meat based,NV,200
+15,Tod Mun,Thai,264,19.6,14.2,8.2,350,Sea food based,NV,300
+16,Caesar Salad,Cafe,184,14,7,7,594,Salad based,NV,200
+17,Club Sandwich,Cafe,535,32.1,38.8,22.7,1250,Wheat based,NV,250
+18,Croissant,Cafe,406,23.5,42.1,8.5,753,Wheat based,V,50
+19,Pancakes,Cafe,227,9.2,34.5,5,461,Wheat based,V,150
+20,Chili Con Carne,Cafe,139,5.5,14.1,8.5,330,Meat based,NV,200
+21,Quiche,Cafe,238,15.3,14.3,9.3,527,Wheat based,V,150
+22,Chicken and Mushroom Pie,Cafe,242,15.4,16.4,7.4,494,Wheat based,NV,250
+23,Beef Burger,Cafe,295,13.7,28.2,16.2,628,Wheat based,NV,300
+24,Ham and Cheese Croissant,Cafe,295,17.7,22.6,10.4,862,Wheat based,NV,100
+25,French Toast,Cafe,273,14.2,28.2,6.5,337,Wheat based,V,150
+26,Fruit Salad,Cafe,70,0.3,17.3,0.9,11,Fruits,V,100
+27,English Breakfast,Cafe,325,21.8,8.5,19.6,920,Meat based,NV,300
+28,Hot Chocolate,Cafe,100,2.6,14.6,3.6,69,Milk based,V,100
+29,Tuna Melt Sandwich,Cafe,390,20.5,32.5,22.5,1300,Wheat based,NV,250
+30,Cappuccino,Cafe,60,2.5,5.5,3.5,50,Milk based,V,100
+31,Chicken Teriyaki Bowl,Teriyaki,320,7.5,40,24,1020,Rice based,NV,300
+32,Beef Teriyaki Bowl,Teriyaki,310,5.5,42,24,1140,Rice based,NV,350
+33,Sesame Ginger Tofu,Teriyaki,167,10,11,10,530,Rice based,V,250
+34,Vegetable Yakisoba,Teriyaki,181,2,36,5,620,Wheat based,V,200
+35,Salmon Teriyaki,Teriyaki,301,18.7,10.4,22.7,760,Sea food based,NV,400
+36,Tofu Teriyaki,Teriyaki,164,7.3,11.4,13,801,Rice based,V,250
+37,Shrimp Teriyaki Bowl,Teriyaki,221,3.3,39.4,9.4,500,Rice based,NV,350
+38,Chicken Katsu,Teriyaki,277,15,13,22,782,Meat based,NV,300
+39,Beef Katsu,Teriyaki,285,16,22,12,607,Meat based,NV,350
+40,Tempura Shrimp Roll,Teriyaki,184,5.5,27,5.5,383,Wheat based,NV,200
+41,California Roll,Teriyaki,225,5.5,38.5,6.5,519,Rice based,V,250
+42,Yaki Udon,Teriyaki,198,3.8,33,7.6,701,Wheat based,V,300
+43,Vegetable Tempura,Teriyaki,198,8.8,27,2.9,482,Wheat based,V,250
+44,Gyoza,Teriyaki,222,8,26,11,536,Wheat based,NV,200
+45,Chicken Yakitori,Teriyaki,216,9.4,13.3,21.3,639,Meat based,NV,250
+46,Butter Chicken,Curry,311,17.4,15.4,22.7,680,Meat based,NV,400
+47,Chana Masala,Curry,166,6.3,20.3,6.7,283,Vegetarian based,V,250
+48,Rogan Josh,Curry,211,12.3,7.6,17.8,776,Meat based,NV,450
+49,Palak Paneer,Curry,117,7.2,7.6,5.6,370,Vegetarian based,V,300
+50,Chicken Tikka Masala,Curry,299,16.5,16.5,20.5,800,Meat based,NV,400
+51,Aloo Gobi,Curry,120,7,11,3,330,Vegetarian based,V,200
+52,Beef Vindaloo,Curry,201,11.8,7.6,17.8,800,Meat based,NV,450
+53,Chicken Korma,Curry,246,17,8.7,14,631,Meat based,NV,400
+54,Paneer Makhani,Curry,303,21,13,12,600,Vegetarian based,V,350
+55,Gongura Chicken,Andhra,290,13,8,33,880,Meat based,NV,350
+56,Pesarattu,Andhra,129,2.5,23,5,5,Wheat based,V,80
+57,Andhra Chicken Fry,Andhra,250,12,14,23,640,Meat based,NV,300
+58,Gutti Vankaya,Andhra,170,8,18,4,120,Vegetarian based,V,180
+59,Royyala Vepudu,Andhra,232,12,15,18,718,Sea food based,NV,400
+60,Kobbari Pachadi,Andhra,240,19,13,4,160,Vegetarian based,V,150
+61,Andhra Mutton Biryani,Andhra,350,12,33,20,800,Rice based,NV,450
+62,Potlakaya Pulusu,Andhra,120,6,9,7,270,Vegetarian based,V,150
+63,Andhra Prawn Curry,Andhra,186,12,7,12,734,Sea food based,NV,350
+64,Avakaya,Andhra,280,21,12,8,120,Vegetarian based,V,200
+65,Kodi Pulao,Andhra,277,13,27,15,666,Rice based,NV,350
+66,Ulavacharu,Andhra,70,0.6,15,3,60,Vegetarian based,V,100
+67,Rayalaseema Ruchulu Special Biryani,Andhra,368,19.7,41.1,8.9,958,Rice based,NV,500
+68,Mirchi Bajji,Andhra,180,7,13,3,200,Vegetarian based,V,100
+69,Andhra Chepala Pulusu,Andhra,124,6.7,7.8,8.7,163,Sea food based,NV,350
+55,Chocolate Ice Cream,Ice cream,216,13,24,3.4,80,Milk based,V,150
+56,Vanilla Ice Cream,Ice cream,207,11,26,3.7,93,Milk based,V,150
+57,Strawberry Ice Cream,Ice cream,220,12,26,3.1,75,Milk based,V,180
+58,Mint Chocolate Chip Ice Cream,Ice cream,262,15,28,3.1,71,Milk based,V,200
+59,Cookies and Cream Ice Cream,Ice cream,267,14,34,3.3,122,Milk based,V,200
+60,Rocky Road Ice Cream,Ice cream,270,14,32,3.1,110,Milk based,V,200
+61,Mango Ice Cream,Ice cream,187,9.5,27,2.5,56,Milk based,V,160
+62,Pistachio Ice Cream,Ice cream,270,14,28,3.7,107,Milk based,V,200
+63,Butter Pecan Ice Cream,Ice cream,290,18,28,3.3,75,Milk based,V,220
+64,Caramel Ice Cream,Ice cream,280,16,31,3.1,100,Milk based,V,200
+65,Coffee Ice Cream,Ice cream,267,16,25,3.1,85,Milk based,V,180
+66,Raspberry Sorbet,Ice cream,140,0,37,0.3,3,Fruit based,V,160
+67,Lemon Sorbet,Ice cream,127,0,32,0.4,4,Fruit based,V,160
+68,Strawberry Sorbet,Ice cream,165,0.5,41,0.4,2,Fruit based,V,180
+69,Chocolate Sorbet,Ice cream,212,3.3,46,3.3,19,Fruit based,V,200
+70,Grilled Chicken Breast,Healthy food,165,3.6,0,31,63,Meat based,NV,250
+71,Grilled Salmon,Healthy food,206,13,0,22,50,Sea food based,NV,450
+72,Grilled Tofu,Healthy food,144,7,4,16,4,Vegetarian based,V,150
+73,Greek Salad,Healthy food,118,9,4,3,308,Salad based,V,200
+74,Tuna Salad,Healthy food,168,9,5,18,392,Sea food based,NV,300
+75,Veggie Wrap,Healthy food,156,8,21,3,331,Wheat based,V,200
+76,Quinoa Salad,Healthy food,120,2,21,4,2,Salad based,V,250
+77,Hummus,Healthy food,177,10,17,7,320,Vegetarian based,V,150
+78,Chia Pudding,Healthy food,90,5,8,3,1,Milk based,V,150
+79,Baked Sweet Potato,Healthy food,90,0.2,21,2,41,Vegetarian based,V,100
+80,Avocado Toast,Healthy food,219,15,18,5,176,Wheat based,V,300
+81,Spinach and Mushroom Omelette,Healthy food,80,5.5,2,6,221,Milk based,V,150
+82,Turkey and Cheese Roll-ups,Healthy food,120,6,4,12,420,Meat based,NV,250
+83,Grilled Shrimp Skewers,Healthy food,143,2,2,28,392,Sea food based,NV,400
+84,Steamed Broccoli,Healthy food,55,0.6,11,3,33,Vegetarian based,V,100
+1,Kiwi Smoothie,Kiwi,80,0.4,20.3,1.1,3,Fruits,V,80
+2,Kiwi Salad,Kiwi,67,0.4,15.9,1.4,4,Salad based,V,120
+3,Kiwi Jam,Kiwi,207,0.4,55.8,0.7,6,Vegetarian based,V,250
+4,Kiwi Chicken,Kiwi,183,7.6,9.6,20.6,407,Meat based,NV,300
+5,Kiwi Quinoa Salad,Kiwi,89,2.1,14.3,3.4,4,Wheat based,V,150
+6,Kiwi Salsa,Kiwi,23,0.3,5.7,0.5,47,Salad based,V,90
+7,Kiwi Chia Pudding,Kiwi,113,5.2,16.1,2.7,10,Milk based,V,120
+8,Kiwi Chicken Wrap,Kiwi,217,6.7,24.9,14.7,600,Wheat based,NV,200
+9,Kiwi Tuna Salad,Kiwi,80,0.9,9.6,7.6,168,Sea food based,NV,300
+10,Kiwi Yogurt Parfait,Kiwi,75,2.2,10.6,2.6,25,Milk based,V,100
+11,Kiwi Energy Balls,Kiwi,343,4.4,70.5,6.5,5,Vegetarian based,V,200
+12,Kiwi Fruit Salad,Kiwi,63,0.4,15.4,1.1,2,Fruits,V,70
+13,Kiwi Sorbet,Kiwi,110,0,28,1,2,Ice cream,V,120
+14,Kiwi Chicken Curry,Kiwi,168,7.2,8.4,18.4,395,Curry,NV,250
+15,Kiwi Smoothie Bowl,Kiwi,87,1,19,2.8,10,Fruits,V,150
+1,French fries,Fast Food,312,15,41,3.4,246,Junk food,V,50
+2,Hamburger,Fast Food,295,11,32,15,672,Meat based,NV,80
+3,Cheeseburger,Fast Food,303,12,31,16,832,Meat based,NV,85
+4,Chicken nuggets,Fast Food,290,18,14,14,510,Meat based,NV,90
+5,Onion rings,Fast Food,327,17,38,4,575,Junk food,V,55
+6,Hot dog,Fast Food,250,14,20,10,950,Meat based,NV,75
+7,Pizza,Fast Food,266,10,31,11,480,Junk food,V,120
+8,Fried chicken,Fast Food,280,20,13,15,672,Meat based,NV,100
+9,Taco,Fast Food,226,12,18,11,678,Meat based,NV,70
+10,Burrito,Fast Food,163,5.6,22,6.1,400,Meat based,NV,65
+11,Fried fish,Fast Food,232,12,17,13,464,Sea food based,NV,120
+12,Grilled sandwich,Fast Food,249,11,25,11,540,Wheat based,V,70
+13,Chips,Fast Food,312,15,41,3.4,246,Junk food,V,45
+14,Chicken burger,Fast Food,303,12,31,16,832,Meat based,NV,80
+15,Chilli cheese fries,Fast Food,312,15,41,3.4,246,Junk food,V,60
+1,Jollof rice,African,165,3.3,30.8,3.7,196,Rice based,V,90
+2,Ewa agonyin,African,160,2.5,30,5.5,200,Vegetarian based,V,70
+3,Pounded yam,African,116,0.5,27,1.5,2,Rice based,V,80
+4,Chin chin,African,502,24,63,6,166,Junk food,V,60
+5,Suya,African,268,18,2,24,1100,Meat based,NV,120
+6,Kelewele,African,137,0.3,37.7,1.3,9,Junk food,V,50
+7,Attiéké,African,170,0.4,40,2.4,11,Rice based,V,80
+8,Chakalaka,African,86,1.6,15.6,2.3,142,Salad based,V,60
+1,Scotch broth,Scottish,43,1.3,6.3,2.3,345,Meat based,NV,120
+2,Haggis,Scottish,250,16.0,10.0,14.0,670,Meat based,NV,450
+3,Fried Mars bar,Scottish,460,25.0,50.0,4.0,230,Junk food,NV,150
+4,Black pudding,Scottish,320,22.0,3.8,26.0,800,Meat based,NV,280
+5,Cullen skink,Scottish,61,3.1,6.8,1.9,269,Sea food based,NV,180
+6,Cranachan,Scottish,151,8.6,14.6,3.6,21,Milk based,V,350
+7,Arbroath smokie,Scottish,170,6.0,0.0,28.0,1,Sea food based,NV,450
+8,Fish supper,Scottish,209,10.0,20.0,9.0,300,Sea food based,NV,320
+9,Stovies,Scottish,101,4.0,8.0,7.0,290,Meat based,NV,150
+10,Bridies,Scottish,275,12.0,32.0,9.0,550,Meat based,NV,230
+11,Neeps and tatties,Scottish,48,0.3,10.3,1.3,1,Vegetarian based,V,80
+12,Scottish salmon,Scottish,208,12.0,0.0,22.0,60,Sea food based,NV,700
+13,Shortbread,Scottish,500,27.5,60.0,5.5,225,Milk based,V,120
+14,Scotch pie,Scottish,335,21.5,22.5,10.5,575,Meat based,NV,210
+15,Tablet,Scottish,383,7.5,77.5,1.5,225,Milk based,V,80
+1,Fish and Chips,British,292,14,24,14,350,Meat based,NV,200
+2,Shepherd's Pie,British,117,3.8,14,6.3,273,Meat based,NV,150
+3,Bangers and Mash,British,224,16,8.4,10,700,Meat based,NV,180
+4,Full English Breakfast,British,290,20,19,8.8,1010,Meat based,NV,250
+5,Beef Wellington,British,373,23,20,20,263,Meat based,NV,500
+6,Ploughman's Lunch,British,203,12,20,7.8,660,Meat based,V,180
+7,Cornish Pasty,British,265,15,23,7,470,Meat based,NV,100
+8,Toad in the Hole,British,193,10,18,6.5,480,Meat based,NV,170
+9,Steak and Kidney Pie,British,215,10,21,11,310,Meat based,NV,350
+10,Black Pudding,British,339,29,9.6,14,800,Meat based,NV,80
+11,Scotch Egg,British,300,21,18,9.9,689,Meat based,NV,120
+12,Beef and Ale Stew,British,117,2.2,8.5,16,360,Meat based,NV,200
+13,Sticky Toffee Pudding,British,295,8.1,52,3.3,250,Dessert,V,100
+14,Trifle,British,140,7,18,2.9,130,Dessert,V,150
+15,Apple Pie,British,243,10,37,1.6,103,Dessert,V,180
+1,Coca-Cola,Beverages,42,0,11,0,10,Beverages,V,50
+2,Sprite,Beverages,39,0,10,0,9,Beverages,V,50
+3,Fanta,Beverages,41,0,11,0,10,Beverages,V,50
+4,Pepsi,Beverages,41,0,11,0,9,Beverages,V,50
+5,Diet Coke,Beverages,0,0,0,0,27,Beverages,V,60
+6,Mountain Dew,Beverages,46,0,12,0,18,Beverages,V,60
+7,Red Bull,Beverages,45,0,11,0.6,70,Beverages,V,100
+8,Monster Energy,Beverages,54,0,14,1,370,Beverages,V,120
+9,Cappuccino,Beverages,71,3.1,8.3,3.1,43,Beverages,V,120
+1,Avocado Toast,Breakfast,160,10,15,5,160,Salad based,V,150
+2,Ham and Cheese Omelette,Breakfast,220,15,2,18,420,Meat based,NV,200
+3,Blueberry Pancakes,Breakfast,280,4,52,10,550,Wheat based,V,250
+4,Granola with Yogurt,Breakfast,150,3,28,4,80,Milk based,V,180
+5,Bagel with Cream Cheese,Breakfast,290,10,40,8,430,Wheat based,V,120
+6,Scrambled Eggs with Toast,Breakfast,190,10,17,7,280,Wheat based,V,180
+7,Fruit and Yogurt Parfait,Breakfast,120,2,23,5,70,Fruits,V,150
+8,Banana Smoothie,Breakfast,120,1,28,2,10,Beverages,V,120
+9,Breakfast Burrito,Breakfast,320,14,32,20,960,Wheat based,NV,220
+10,English Breakfast,Breakfast,450,30,30,20,900,Meat based,NV,300
+11,Cinnamon Roll,Breakfast,250,12,33,3,320,Wheat based,V,150
+12,French Toast,Breakfast,280,12,31,10,360,Wheat based,V,200
+13,Chia Seed Pudding,Breakfast,120,4,12,4,10,Milk based,V,200
+14,Egg and Cheese Sandwich,Breakfast,260,12,21,14,480,Wheat based,NV,180
+15,Breakfast Smoothie,Breakfast,150,2,28,4,30,Beverages,V,140
+1,Doner Kebab,Turkish Pizza,270,16,18,15,680,Meat based,NV,250
+2,Lahmacun,Turkish Pizza,170,5,25,5,380,Meat based,V,120
+3,Adana Kebab,Turkish Pizza,300,20,5,25,780,Meat based,NV,300
+4,Pide,Turkish Pizza,210,8,29,8,410,Meat based,V,150
+5,Chicken Shawarma,Turkish Pizza,220,5,26,16,400,Meat based,NV,200
+6,Iskender Kebab,Turkish Pizza,450,25,30,25,1100,Meat based,NV,350
+7,Vegetarian Pide,Turkish Pizza,180,5,28,5,320,Vegetarian based,V,120
+8,Simit,Turkish Pizza,250,10,35,6,290,Wheat based,V,100
+9,Turkish Pizza,Turkish Pizza,280,15,23,14,570,Meat based,NV,200
+Parsi01,Dhansak,Parsi,162,8.3,16.1,6.7,106,Meat based,NV,300
+Parsi02,Akuri,Parsi,141,8.5,5.7,11.5,352,Meat based,NV,200
+Parsi03,Parsi-style chicken farcha,Parsi,222,11.6,13.6,15.6,624,Meat based,NV,250
+Parsi04,Bhakras,Parsi,310,13.5,46.5,5.5,140,Salad based,V,150
+Parsi05,Parsi chicken curry,Parsi,139,6.6,9.6,10.6,278,Meat based,NV,200
+Parsi06,Kolmi no patio,Parsi,116,3.3,8.1,13.9,366,Sea food based,NV,400
+Parsi07,Parsi style chicken kebabs,Parsi,187,8.9,9.6,16.3,322,Meat based,NV,300
+Parsi08,Papeta par eedu,Parsi,127,6.3,9.4,8.4,254,Meat based,NV,150
+Parsi09,Patra ni machchi,Parsi,134,7.1,6.8,10.9,315,Sea food based,NV,500
+Parsi10,Parsi style eggs,Parsi,127,7.9,3.3,10.3,245,Meat based,NV,100
+Parsi11,Berry pulao,Parsi,183,9.2,25.7,2.8,94,Rice based,V,300
+Parsi12,Sali boti,Parsi,212,12.5,10.7,15.8,438,Meat based,NV,400
+Parsi13,Patrel biryani,Parsi,160,6.7,20.3,6.7,161,Rice based,V,350
+Parsi14,Parsi-style chicken cutlets,Parsi,147,7.6,10.8,9.6,281,Meat based,NV,200
+Parsi15,Lagan nu custard,Parsi,152,5.4,22.5,4.4,104,Milk based,V,150
+1,Pho,Vietnamese,28,0.1,6.3,1.9,7,Meat based,NV,200
+2,Goi Cuon,Vietnamese,75,0.8,14.5,2.5,135,Vegetarian based,V,150
+3,Banh Mi,Vietnamese,250,8.5,34.5,9.5,450,Meat based,NV,300
+4,Bun Cha,Vietnamese,130,1.5,16,10.5,550,Meat based,NV,250
+5,Bo La Lot,Vietnamese,230,16,4,16,600,Meat based,NV,350
+6,Com Tam,Vietnamese,190,4.2,30.8,3.9,300,Meat based,NV,200
+7,Ca Phe Sua Da,Vietnamese,57,1,11.3,1,15,Beverages,V,100
+8,Cha Gio,Vietnamese,300,18,15,20,750,Meat based,NV,300
+9,Mi Quang,Vietnamese,80,1,15,4,200,Meat based,NV,150
+10,Banh Xeo,Vietnamese,210,12,23,5,300,Meat based,NV,200
+11,Com Rang,Vietnamese,170,5.5,26,3,250,Meat based,NV,150
+12,Canh Chua,Vietnamese,50,0.5,5,5,500,Vegetarian based,V,100
+13,Ga Nuong,Vietnamese,165,6,8,22,1000,Meat based,NV,250
+14,Tofu Chien,Vietnamese,120,5.5,8,10,200,Vegetarian based,V,150
+15,Chao,Vietnamese,80,1,15,4,200,Vegetarian based,V,100
+1,Adobo,Filipino,230,15,3,20,1000,Meat based,NV,300
+2,Kare-Kare,Filipino,300,25,8,15,750,Meat based,NV,350
+3,Lechon,Filipino,360,25,0,30,350,Meat based,NV,400
+4,Lumpia,Filipino,180,10,20,5,250,Vegetarian based,V,150
+5,Sinigang,Filipino,50,0,10,2,200,Vegetarian based,V,100
+6,Tocino,Filipino,320,15,25,20,800,Meat based,NV,250
+7,Longganisa,Filipino,320,20,5,15,600,Meat based,NV,300
+1,Asado,South American,256,16,0,24,65,Meat based,NV,400
+2,Churrasco,South American,183,8,1,26,65,Meat based,NV,350
+3,Feijao Tropeiro,South American,198,9,25,7,163,Vegetarian based,V,200
+4,Ceviche,South American,88,1,12,9,210,Sea food based,NV,250
+5,Arepas,South American,287,14,36,4,497,Wheat based,V,150
+6,Empanadas,South American,329,18,34,9,574,Wheat based,NV,100
+7,Locro,South American,86,1,14,7,168,Vegetarian based,V,150
+8,Alfajores,South American,460,20,67,4,62,Patisserie,V,50
+9,Dulce de Leche,South American,313,6,56,8,187,Patisserie,V,100
+10,Churros,South American,398,17,50,7,149,Patisserie,V,70
+11,Tostones,South American,208,11,33,1,298,Vegetarian based,V,80
+12,Cachapas,South American,177,4,33,4,259,Vegetarian based,V,120
+13,Tamales,South American,239,9,32,7,245,Meat based,V,200
+14,Quimbolitos,South American,215,7,34,3,75,Vegetarian based,V,80
+15,Arroz con Pollo,South American,147,3,25,4,283,Meat based,NV,300
+1,Croissant,Patisserie,406,23,45,7,502,Wheat based,V,50
+2,Eclair,Patisserie,260,15,27,4,71,Milk based,V,70
+3,Fruit Tart,Patisserie,170,7,27,2,57,Fruits,V,60
+4,Palmier,Patisserie,493,23,62,5,135,Wheat based,V,40
+5,Macaron,Patisserie,320,16,47,5,20,Milk based,V,80
+6,Cannele,Patisserie,280,13,36,5,30,Wheat based,V,60
+7,Brioche,Patisserie,342,17,43,8,340,Wheat based,V,50
+8,Opera Cake,Patisserie,289,19,23,5,33,Milk based,V,120
+9,Financier,Patisserie,435,28,36,8,335,Wheat based,V,50
+10,Canelé de Bordeaux,Patisserie,328,15,43,6,19,Wheat based,V,80
+11,Tiramisu,Patisserie,246,12,28,6,99,Milk based,V,100
+12,Madeleine,Patisserie,369,20,42,5,342,Wheat based,V,30
+13,Galette des Rois,Patisserie,327,22,25,6,186,Wheat based,V,100
+14,Chausson aux pommes,Patisserie,272,14,33,4,163,Wheat based,V,60
+15,Mille-Feuille,Patisserie,332,20,31,6,160,Wheat based,V,90
+1,Chicken Alfredo,Cuisine Varies,191,7,15,17,333,Meat based,NV,300
+2,Chicken Burger,Cuisine Varies,265,11,24,16,630,Junk food,NV,150
+3,Fish and Chips,Cuisine Varies,274,14,26,11,398,Sea food based,NV,250
+4,Mixed Grill,Cuisine Varies,286,14,0,39,471,Meat based,NV,500
+5,Grilled Vegetables,Cuisine Varies,70,1,13,3,68,Vegetarian based,V,200
+6,Caesar Salad,Cuisine Varies,132,10,6,5,363,Salad based,V,350
+7,Pasta Arrabiata,Cuisine Varies,127,2,22,5,235,Wheat based,V,250
+8,Beef Stroganoff,Cuisine Varies,176,10,6,17,380,Meat based,NV,450
+9,Steak and Kidney Pie,Cuisine Varies,278,17,20,11,430,Meat based,NV,300
+10,Falafel Wrap,Cuisine Varies,288,9,45,8,711,Wheat based,V,200
+11,Beef Shawarma,Cuisine Varies,266,11,28,14,350,Meat based,NV,250
+12,Chicken Tandoori,Cuisine Varies,165,3,3,28,340,Meat based,NV,350
+1,Adana Kebab,Turkish,240,16,4,20,220,Meat based,NV,450
+2,Doner Kebab,Turkish,301,17,9,27,775,Meat based,NV,300
+3,Lahmacun,Turkish,288,10,36,9,422,Wheat based,NV,150
+4,Kofte,Turkish,201,10,6,22,230,Meat based,NV,350
+5,Manti,Turkish,258,11,29,12,305,Meat based,NV,400
+6,Baklava,Turkish,296,16,36,3,82,Patisserie,V,200
+7,Turkish Delight,Turkish,326,0,80,0,10,Sweet based,V,100
+8,Iskender Kebab,Turkish,316,19,11,25,734,Meat based,NV,500
+9,Pide,Turkish,258,9,34,9,271,Wheat based,V,150
+10,Kebab Roll,Turkish,280,17,22,9,1000,Junk food,NV,250
+11,Mercimek Corbasi,Turkish,66,3,7,3,307,Vegetarian based,V,100
+1,Taco,Latin American,226,10,27,9,387,Meat based,NV,100
+2,Burrito,Latin American,163,6,20,8,435,Meat based,NV,150
+3,Chimichanga,Latin American,322,15,34,12,802,Meat based,NV,200
+4,Tostadas,Latin American,130,5,15,5,365,Vegetarian based,V,80
+5,Empanadas,Latin American,308,18,29,8,615,Meat based,NV,180
+6,Pupusas,Latin American,138,5,21,4,341,Meat based,NV,100
+7,Arepas,Latin American,149,3,28,3,205,Vegetarian based,V,80
+8,Ceviche,Latin American,92,0.7,4.5,16,176,Sea food based,NV,250
+9,Feijoada,Latin American,145,6,15,8,426,Meat based,NV,300
+10,Churrasco,Latin American,345,22,0,33,868,Meat based,NV,500
+11,Arroz con Pollo,Latin American,140,2,28,6,343,Meat based,NV,200
+12,Tamales,Latin American,184,8,23,6,314,Meat based,NV,150
+1,Barbecue Chicken,BBQ,239,6.4,6.4,37,340,Meat based,NV,300
+2,Barbecue Pork Ribs,BBQ,361,23,0,37,919,Meat based,NV,500
+3,Smoked Brisket,BBQ,320,22,0,27,110,Meat based,NV,450
+4,Pulled Pork,BBQ,271,16,0,28,298,Meat based,NV,400
+5,Grilled Shrimp,BBQ,99,1.5,0,20,230,Sea food based,NV,600
+6,Barbecue Beef Sandwich,BBQ,237,6.9,28,13,545,Wheat based,NV,350
+7,Grilled Corn,BBQ,86,1.2,18,3.2,15,Salad based,V,50
+8,Barbecue Chicken Wings,BBQ,203,14,0,19,610,Meat based,NV,250
+9,Barbecue Pork Chops,BBQ,221,11,0,30,740,Meat based,NV,550
+10,Grilled Pineapple,BBQ,50,0,13,0.4,1,Fruits,V,100
+11,Barbecue Shrimp Skewers,BBQ,114,0.7,0,23,298,Sea food based,NV,700
+12,Barbecue Tofu,BBQ,144,8.1,4.4,13,4,Vegetarian based,V,250
+13,Barbecue Lamb Chops,BBQ,282,20,0,24,70,Meat based,NV,600
+14,Barbecue Ribeye Steak,BBQ,250,20,0,19,60,Meat based,NV,700
+15,Grilled Zucchini,BBQ,17,0.3,3.1,1.2,5,Salad based,V,70
+1,Rasgulla,Mithai,186,0.2,44.9,3.9,47,Dessert,V,25
+2,Gulab Jamun,Mithai,354,5.1,73.5,6.5,170,Dessert,V,40
+3,Kaju Katli,Mithai,553,32.5,49.2,13.3,3,Sweet,V,100
+4,Barfi,Mithai,340,12.9,57.8,3.9,132,Sweet,V,60
+5,Rasmalai,Mithai,331,17.3,37.9,8.2,129,Dessert,V,50
+6,Peda,Mithai,374,17.6,48.7,9.3,170,Sweet,V,45
+7,Ladoo,Mithai,387,12.7,69.3,3.7,57,Sweet,V,30
+8,Jalebi,Mithai,459,25.1,54.6,5.6,59,Dessert,V,25
+9,Sandesh,Mithai,207,10.4,26.8,4.4,94,Sweet,V,35
+10,Modak,Mithai,234,3.3,49.3,3.8,17,Dessert,V,20
+11,Shrikhand,Mithai,196,3.3,34.3,6.8,30,Dessert,V,40
+12,Balushahi,Mithai,458,22.2,61.2,5.8,127,Sweet,V,30
+1,Asado,Argentine,250,16.1,0,23.3,90,Meat based,NV,500
+2,Empanadas,Argentine,315,20,25,7.5,620,Meat based,NV,60
+3,Milanesa,Argentine,325,14,25,25,750,Meat based,NV,200
+4,Locro,Argentine,163,3.3,19.8,13.3,67,Meat based,V,150
+5,Chimichurri,Argentine,431,46,9,2,720,Meat based,V,30
+6,Provoleta,Argentine,369,30,0,27.3,600,Milk based,V,350
+7,Dulce de leche,Argentine,313,6,57.6,7,148,Dessert,V,50
+8,Malbec,Argentine,83,0,2.8,0.2,4,Beverage,V,1200
+9,Matambre,Argentine,200,12.5,0,25,300,Meat based,NV,350
+1,Pastrami Sandwich,Deli,250,14,22,8,840,Wheat based,NV,350
+2,Corned Beef Sandwich,Deli,320,16,30,10,1120,Wheat based,NV,400
+3,Turkey Club Sandwich,Deli,350,18,28,21,1360,Wheat based,NV,380
+4,Reuben Sandwich,Deli,360,18,34,16,1310,Wheat based,NV,400
+5,Grilled Cheese Sandwich,Deli,280,14,27,10,760,Wheat based,V,250
+6,Egg Salad Sandwich,Deli,280,16,18,12,330,Wheat based,V,280
+7,Tuna Salad Sandwich,Deli,320,16,24,18,840,Wheat based,NV,300
+8,Roast Beef Sandwich,Deli,280,16,22,11,680,Wheat based,NV,360
+9,Potato Salad,Deli,143,6.5,19,2,310,Salad based,V,150
+10,Macaroni Salad,Deli,167,10,14,3.4,292,Salad based,V,170
+11,Coleslaw Salad,Deli,86,4.8,10,0.9,56,Salad based,V,100
+12,Chicken Salad,Deli,167,9.8,6.8,11,450,Salad based,NV,300
+13,Pickles,Deli,11,0,2.3,0.5,1290,Salad based,V,50
+14,Bagel and Cream Cheese,Deli,280,8,43,9,530,Wheat based,V,180
+15,Matzo Ball Soup,Deli,50,1.5,6,2,600,Wheat based,V,120
+1,Lalap,Sunda,24,0.5,5.5,1.1,50,Vegetarian based,V,25
+2,Rawon,Sunda,105,5.5,5.5,8.5,800,Meat based,NV,100
+3,Nasi Timbel,Sunda,103,2.5,19.5,2.5,5,Rice based,V,70
+4,Karedok,Sunda,19,0.5,3.5,1.1,35,Vegetarian based,V,30
+5,Es Cendol,Sunda,121,2.5,25,0.5,10,Beverages,V,20
+6,Ayam Goreng,Sunda,195,13,0.5,16,500,Meat based,NV,120
+7,Empal Gentong,Sunda,120,4,5.5,16,500,Meat based,NV,110
+8,Sate,Sunda,166,11,3.5,14,350,Meat based,NV,80
+9,Pepes Ikan,Sunda,93,2.5,9.5,7.5,300,Sea food based,NV,90
+10,Sop Buntut,Sunda,131,9.5,6.5,6,600,Meat based,NV,80
+11,Ikan Gurame Bakar,Sunda,170,7,0,23,500,Sea food based,NV,250
+12,Nasi Liwet,Sunda,100,1.5,20,2.5,5,Rice based,V,60
+1,Tortilla española,Spanish,157,9.5,7,9,270,Meat based,V,150
+2,Paella,Spanish,127,1.7,24.5,3.7,290,Sea food based,V,300
+3,Gazpacho,Spanish,20,0.5,3.5,0.5,200,Vegetarian based,V,50
+4,Pulpo a la gallega,Spanish,99,5.5,5,8.5,500,Sea food based,NV,200
+5,Churros,Spanish,385,17,52,4.6,100,Desserts and sweets,V,70
+6,Tostada con tomate,Spanish,145,6,20,3,300,Wheat based,V,60
+7,Fabada asturiana,Spanish,149,8.5,8,9.5,450,Meat based,NV,200
+8,Calamares a la romana,Spanish,211,11,18,10,500,Sea food based,NV,250
+9,Ensalada rusa,Spanish,167,14,7,3.8,275,Salad based,V,100
+1,Hainanese Chicken Rice,Singaporean,180,5.5,18,13,300,Rice based,NV,250
+2,Laksa,Singaporean,285,17,18,16,1088,Rice based,NV,350
+3,Chilli Crab,Singaporean,199,9.3,11,16,425,Sea food based,NV,600
+4,Satay,Singaporean,285,23,9,12,576,Meat based,NV,400
+5,Bak Kut Teh,Singaporean,200,14,2,15,733,Meat based,NV,280
+6,Curry Puff,Singaporean,265,14,31,4.4,450,Wheat based,NV,80
+7,Oyster Omelette,Singaporean,270,20,13,8,691,Sea food based,NV,250
+8,Popiah,Singaporean,120,2,23,2,90,Wheat based,V,100
+9,Rojak,Singaporean,150,8,18,2.5,100,Salad based,V,150
+10,Biryani Rice,Singaporean,150,3,30,3,20,Rice based,V,200
+11,Sambal Stingray,Singaporean,163,9,1,18,218,Sea food based,NV,300
+12,Fried Carrot Cake,Singaporean,230,16,17,3,605,Wheat based,V,100
+13,Nasi Lemak,Singaporean,298,18,19,12,697,Rice based,NV,250
+14,Kaya Toast,Singaporean,200,8,30,4,160,Wheat based,V,50
+15,Ice Kacang,Singaporean,245,0,60,1,15,Fruits,V,80
+1,Cozido à Portuguesa,Portuguese,259,16.6,8.1,18.2,749,Meat based,NV,400
+2,Caldo verde,Portuguese,54,3.3,3.3,2.3,229,Vegetarian based,V,100
+3,Feijoada,Portuguese,121,3.3,13.1,8.4,620,Meat based,NV,200
+4,Ameijoas à Bulhão Pato,Portuguese,148,7.5,5.7,14.1,684,Sea food based,NV,350
+5,Francesinha,Portuguese,354,23.8,18.3,17.9,1359,Meat based,NV,500
+6,Pastéis de nata,Portuguese,298,17.9,29.2,4.1,162,Dessert,V,50
+7,Bacalhau à brás,Portuguese,154,6.9,6.8,15.2,574,Sea food based,NV,250
+8,Chouriço assado,Portuguese,271,22.8,3.3,13.3,1310,Meat based,NV,300
+9,Polvo à lagareiro,Portuguese,196,12.6,2.1,19.2,647,Sea food based,NV,400
+10,Arroz de marisco,Portuguese,140,3.8,15.3,10.2,250,Sea food based,NV,350
+11,Pão de Deus,Portuguese,256,11.4,34.7,4.1,250,Pastry,V,30
+12,Carne de porco à alentejana,Portuguese,130,7.6,2.6,11.2,539,Meat based,NV,250
+13,Toucinho do céu,Portuguese,372,23.8,29.5,10.5,116,Dessert,V,60
+14,Queijadas,Portuguese,342,15.2,44.5,5.5,95,Dessert,V,50
+15,Arroz de Pato,Portuguese,153,5.8,13.3,10.7,482,Meat based,NV,250
+1,Shoyu Ramen,Ramen,435,10,54,26,1200,Noodle based,NV,800
+2,Miso Ramen,Ramen,470,16,57,22,1170,Noodle based,V,850
+3,Tonkotsu Ramen,Ramen,590,23,52,40,1660,Noodle based,NV,900
+4,Shio Ramen,Ramen,410,9,60,22,1080,Noodle based,V,800
+5,Veggie Ramen,Ramen,320,6,55,10,640,Noodle based,V,750
+6,Sea food Ramen,Ramen,420,14,46,25,1030,Noodle based,NV,900
+7,Spicy Ramen,Ramen,500,14,70,20,1300,Noodle based,NV,800
+8,Tantanmen Ramen,Ramen,560,24,52,28,1150,Noodle based,NV,850
+9,Mushroom Ramen,Ramen,390,9,56,16,850,Noodle based,V,750
+10,Chicken Ramen,Ramen,460,12,63,23,1160,Noodle based,NV,800
+11,Beef Ramen,Ramen,540,21,53,28,1320,Noodle based,NV,900
+12,Curry Ramen,Ramen,490,18,62,19,1050,Noodle based,NV,800
+13,Green Tea Ramen,Ramen,380,8,61,14,950,Noodle based,V,750
+14,Black Garlic Ramen,Ramen,510,18,60,26,1400,Noodle based,NV,850
+15,Tomato Ramen,Ramen,400,12,63,16,840,Noodle based,V,750
+1,Club sandwich,Diner,240,12,22,10,490,Junk food,NV,250
+2,Philly cheesesteak sandwich,Diner,320,12,24,28,860,Meat based,NV,300
+3,Burger and fries,Diner,312,17,32,11,810,Junk food,NV,200
+4,Hot dog,Diner,296,23,12,10,1068,Meat based,NV,150
+5,Reuben sandwich,Diner,254,16,16,15,676,Meat based,NV,275
+6,Chicken fried steak,Diner,250,11,20,18,400,Meat based,NV,350
+7,Grilled cheese sandwich,Diner,216,12,23,11,422,Salad based,V,125
+8,Milkshake,Diner,180,4,31,4,120,Milk based,V,100
+9,Pancakes with maple syrup,Diner,280,3,61,6,307,Wheat based,V,175
+10,French toast,Diner,200,8,27,6,219,Wheat based,V,150
+11,Chili cheese fries,Diner,312,17,32,11,810,Junk food,NV,225
+12,Meatloaf with mashed potatoes,Diner,243,12,20,14,317,Meat based,NV,275
+1,Gyro wrap,Greek,279,10,25,22,826,Meat based,NV,250
+2,Tzatziki sauce,Greek,102,10,4,1,181,Milk based,V,50
+3,Greek salad,Greek,163,12,9,5,313,Salad based,V,200
+4,Moussaka,Greek,176,10,8,14,303,Vegetarian based,V,300
+5,Saganaki,Greek,320,25,5,20,790,Meat based,NV,275
+6,Souvlaki,Greek,134,5,1,22,385,Meat based,NV,150
+7,Taramasalata,Greek,220,22,2,5,360,Sea food based,V,150
+8,Dolmades,Greek,200,10,22,2,300,Vegetarian based,V,200
+9,Pita bread,Greek,275,2,51,10,407,Wheat based,V,50
+10,Spanakopita,Greek,233,16,15,7,394,Vegetarian based,V,225
+11,Greek yogurt,Greek,59,0,4,10,36,Milk based,V,75
+12,Keftedes,Greek,270,19,10,13,760,Meat based,NV,250
+1,Watermelon Juice,Juices,30,0.2,7.6,0.6,2,Fruits,V,60
+2,Mango Juice,Juices,60,0.3,15,0.7,3,Fruits,V,70
+3,Pineapple Juice,Juices,50,0.1,13,0.5,1,Fruits,V,65
+4,Carrot Beetroot Juice,Juices,35,0.2,8.6,1,10,Salad based,V,55
+5,Orange Juice,Juices,47,0.1,11.8,0.7,1,Fruits,V,75
+6,Pomegranate Juice,Juices,83,1.2,19.1,1.7,10,Fruits,V,90
+7,Strawberry Smoothie,Juices,55,1.1,8.6,1.2,45,Milk based,V,80
+8,Spinach Juice,Juices,23,0.4,3.6,2.8,70,Salad based,V,50
+9,Apple Juice,Juices,46,0.2,11.8,0.2,3,Fruits,V,70
+10,Tomato Juice,Juices,18,0.2,3.5,1,20,Salad based,V,50
+11,Lemonade,Juices,29,0,7.3,0.2,2,Fruits,V,60
+12,Amla Juice,Juices,40,0.1,10,0.8,3,Fruits,V,75
+1,Aloo Tama,North Eastern,140,5,16,7,100,Vegetarian based,NV,120
+2,Eromba,North Eastern,120,4,10,9,250,Vegetarian based,NV,100
+3,Chak Hao Kheer,North Eastern,140,4,22,4,20,Milk based,V,80
+4,Ngari,North Eastern,320,23,3,28,450,Sea food based,NV,300
+5,Bamboo Shoot Fry,North Eastern,110,2,19,6,80,Vegetarian based,V,90
+6,Tungrymbai,North Eastern,160,6,14,12,300,Vegetarian based,NV,110
+7,Gyathuk,North Eastern,150,6,16,8,150,Wheat based,NV,120
+8,Pitha,North Eastern,160,5,28,3,10,Wheat based,V,100
+9,Thukpa,North Eastern,120,2,12,12,300,Wheat based,NV,90
+10,Akhoi Aloo and Chana Saag,North Eastern,200,8,18,15,250,Vegetarian based,NV,150
+101,Pollo a la Brasa,Peruvian,258,13,0,35,91,Meat based,NV,350
+102,Aji de Gallina,Peruvian,155,7,9,14,92,Meat based,NV,300
+103,Causa Rellena,Peruvian,172,6,22,6,56,Wheat based,V,250
+104,Tallarin Saltado,Peruvian,171,7,15,12,50,Meat based,NV,350
+105,Papa a la Huancaína,Peruvian,187,11,16,5,136,Salad based,V,200
+106,Arroz Chaufa,Peruvian,174,5,22,7,190,Rice based,NV,250
+107,Chicha Morada,Peruvian,80,0,19,1,8,Beverages,V,100
+108,Ceviche,Peruvian,132,1,21,13,720,Sea food based,NV,400
+109,Lomo Saltado,Peruvian,175,8,12,16,25,Meat based,NV,350
+110,Empanadas,Peruvian,310,16,25,18,450,Wheat based,NV,250
+111,Churros,Peruvian,368,17,53,3,70,Wheat based,V,150
+112,Mazamorra Morada,Peruvian,98,0,24,1,5,Beverages,V,100
+FR001,Croissant,French,406,23,45,6,480,Wheat based,V,35
+FR002,Baguettes,French,275,1.1,57,8,550,Wheat based,V,30
+FR003,Quiche Lorraine,French,350,24,20,12,470,Meat based,NV,75
+FR004,Bouillabaisse,French,78,0.9,5.5,12,383,Sea food based,NV,150
+FR005,Ratatouille,French,50,2,9,2,10,Vegetarian based,V,80
+FR006,Coq au Vin,French,250,15,3,25,275,Meat based,NV,120
+FR007,Beef Bourguignon,French,200,12,2,20,250,Meat based,NV,200
+FR008,Salade Niçoise,French,190,12,11,11,460,Salad based,V,100
+FR009,Crème Brûlée,French,340,16,35,7,65,Milk based,V,80
+FR010,Profiteroles,French,371,22,32,8,72,Milk based,V,70
+FR011,Escargot,French,250,18,2,16,300,Meat based,NV,150
+FR012,Tarte Tatin,French,256,13,35,3,150,Fruits,V,100
+1,Fish and Chips,Fish and Chips,320,16,28,14,451,Sea food based,NV,400
+2,Cod,Fish and Chips,82,0.5,0,18,59,Sea food based,NV,100
+3,Haddock,Fish and Chips,87,0.6,0,18,58,Sea food based,NV,100
+4,Plaice,Fish and Chips,95,1.1,0,20,72,Sea food based,NV,100
+5,Rockfish,Fish and Chips,90,0.7,0,18,80,Sea food based,NV,100
+6,Chips,Fish and Chips,312,15,39,3.6,580,Wheat based,V,100
+7,Mushy Peas,Fish and Chips,70,0.4,10,5,312,Vegetarian based,V,50
+8,Scampi,Fish and Chips,280,17,22,9,825,Sea food based,NV,400
+9,Coleslaw,Fish and Chips,260,20,20,1.6,225,Vegetarian based,V,80
+10,Calamari,Fish and Chips,180,6,23,11,650,Sea food based,NV,300
+11,Fried Shrimp,Fish and Chips,220,11,20,12,600,Sea food based,NV,250
+12,Tartar Sauce,Fish and Chips,180,19,3,0.6,360,Vegetarian based,V,50
+13,Vinegar,Fish and Chips,0,0,0,0,20,Salad based,V,10
+14,Curry Sauce,Fish and Chips,150,10,13,1,220,Vegetarian based,V,50
+15,Ketchup,Fish and Chips,90,0,23,1.7,305,Salad based,V,20
+1,Bangers and Mash,Pub Food,360,25,20,13,1040,Meat based,NV,200
+2,Fish and Chips,Pub Food,320,16,28,14,451,Sea food based,NV,400
+3,Beef and Ale Pie,Pub Food,440,28,30,16,510,Meat based,NV,300
+4,Shepherd's Pie,Pub Food,350,16,35,16,640,Meat based,NV,250
+5,Ploughman's Lunch,Pub Food,480,29,26,27,870,Meat based,NV,300
+6,Scotch Egg,Pub Food,190,13,9,8,420,Meat based,NV,100
+7,Cheese and Onion Pie,Pub Food,450,29,38,10,780,Vegetarian based,V,200
+8,Steak and Kidney Pie,Pub Food,420,23,33,23,620,Meat based,NV,350
+9,Pork Scratchings,Pub Food,570,41,0,54,1840,Meat based,NV,100
+10,Bread and Butter Pudding,Pub Food,320,14,39,8,200,Milk based,V,100
+11,Plaice and Chips,Pub Food,280,13,22,19,665,Sea food based,NV,350
+12,Chicken and Mushroom Pie,Pub Food,380,25,22,16,560,Meat based,NV,250
+13,Toad in the Hole,Pub Food,360,22,26,12,730,Meat based,NV,200
+14,Scampi and Chips,Pub Food,380,23,31,11,930,Sea food based,NV,400
+15,Buffalo Wings,Pub Food,290,17,12,22,970,Meat based,NV,200
+1,Fried Chicken,Soul Food,250,13,10,22,390,Meat based,NV,250
+2,Collard Greens,Soul Food,50,1,8,3,180,Vegetarian based,V,100
+3,Mashed Potatoes,Soul Food,110,3,20,2,430,Wheat based,V,150
+4,Black-eyed Peas,Soul Food,100,0.4,20,6,3,Vegetarian based,V,150
+5,Cornbread,Soul Food,200,9,27,4,390,Wheat based,V,100
+6,Macaroni and Cheese,Soul Food,310,15,27,15,590,Wheat based,V,200
+7,Barbecue Ribs,Soul Food,420,27,7,34,860,Meat based,NV,400
+8,Fried Catfish,Soul Food,250,15,10,22,150,Sea food based,NV,350
+9,Candied Yams,Soul Food,210,6,36,1,120,Vegetarian based,V,150
+10,Red Beans and Rice,Soul Food,200,2,38,10,490,Vegetarian based,V,200
+11,Fried Okra,Soul Food,160,9,16,2,390,Vegetarian based,V,150
+12,Chitterlings (Chitlins),Soul Food,290,15,4,34,590,Meat based,NV,250
+13,Biscuits and Gravy,Soul Food,470,27,44,10,1110,Wheat based,NV,150
+14,Sweet Potato Pie,Soul Food,300,12,46,3,250,Milk based,V,100
+15,Peach Cobbler,Soul Food,250,11,38,2,200,Milk based,V,100
+1,Momo,Nepalese,184,2.2,33,7.1,401,Wheat based,NV,200
+2,Dal bhat tarkari,Nepalese,119,1.3,23,4.3,251,Vegetarian based,V,150
+3,Choila,Nepalese,176,12,2,16,495,Meat based,NV,300
+4,Aloo tama,Nepalese,55,0.5,11.7,2.5,12,Vegetarian based,V,150
+5,Yomari,Nepalese,171,2.1,37,3.4,0,Wheat based,V,100
+6,Kwati,Nepalese,126,1.6,23.6,7.6,126,Vegetarian based,V,150
+7,Sel roti,Nepalese,290,0,50,10,300,Wheat based,V,50
+8,Chatamari,Nepalese,187,1,38,7,247,Rice based,V,150
+9,Samay Baji,Nepalese,220,6,32,6,80,Rice based,V,200
+10,Sukuti,Nepalese,380,16,1,56,760,Meat based,NV,400
+11,Gundruk,Nepalese,38,0.1,6.8,3.7,56,Vegetarian based,V,100
+12,Juju Dhau,Nepalese,165,4.4,30.4,3.8,55,Milk based,V,100
+13,Khaja Set,Nepalese,450,20,60,10,900,Wheat based,NV,300
+14,Masaura,Nepalese,275,3.3,48.3,11.3,264,Vegetarian based,V,250
+15,Choyla,Nepalese,156,4.4,4.4,25,125,Meat based,NV,300
+1,Vada Pav,Maharashtrian,225,11,26,7,660,Wheat based,V,30
+2,Misal Pav,Maharashtrian,320,14,32,16,750,Wheat based,V,50
+3,Pav Bhaji,Maharashtrian,300,11,45,7,800,Wheat based,V,80
+4,Batata Vada,Maharashtrian,150,8,17,2,295,Wheat based,V,25
+5,Puran Poli,Maharashtrian,305,12.1,43,6.6,109,Rice based,V,100
+6,Kothimbir Vadi,Maharashtrian,200,10,24,6,350,Vegetarian based,V,50
+7,Shrikhand,Maharashtrian,180,4,34,3,110,Milk based,V,60
+8,Sabudana Vada,Maharashtrian,376,16,51,6,394,Vegetarian based,V,30
+9,Modak,Maharashtrian,191,4.1,32.4,4.7,22,Wheat based,V,60
+10,Kanda Bhaji,Maharashtrian,320,16,35,5,1000,Wheat based,V,40
+11,Usal,Maharashtrian,197,9,20,7,572,Vegetarian based,V,70
+12,Bhakarwadi,Maharashtrian,450,20,50,10,1000,Wheat based,V,120
+13,Thalipeeth,Maharashtrian,259,3,52,9,406,Wheat based,V,60
+14,Varan Bhaat,Maharashtrian,236,3,45,7,426,Rice based,V,40
+15,Puranachi Poli,Maharashtrian,400,12,75,10,200,Rice based,V,120
+1,Butter Chicken,North Indian,360,21,5,34,648,Meat based,NV,300
+2,Tandoori Chicken,North Indian,196,6,2,33,401,Meat based,NV,250
+3,Chicken Tikka Masala,North Indian,290,14,11,30,840,Meat based,NV,280
+4,Chole Bhature,North Indian,450,20,45,10,850,Wheat based,V,100
+5,Samosa,North Indian,123,4.4,18,3.8,298,Wheat based,V,20
+6,Aloo Gobi,North Indian,160,7,22,4,150,Vegetarian based,V,80
+7,Palak Paneer,North Indian,140,8,4,12,300,Vegetarian based,V,120
+8,Dal Makhani,North Indian,280,14,28,10,860,Vegetarian based,V,100
+9,Paneer Tikka,North Indian,300,20,10,15,500,Milk based,V,200
+10,Navratan Korma,North Indian,215,15,12,6,150,Vegetarian based,V,150
+11,Chicken Biryani,North Indian,400,14,45,20,850,Rice based,NV,250
+12,Chana Masala,North Indian,230,9,29,8,400,Vegetarian based,V,60
+13,Tandoori Roti,North Indian,250,2,46,8,35,Wheat based,V,10
+14,Kadhai Paneer,North Indian,180,10,10,15,250,Vegetarian based,V,150
+15,Malai Kofta,North Indian,350,20,30,10,600,Vegetarian based,V,120
+1,Pizza,International,285,10,32,15,585,Junk food,NV,300
+2,Burger,International,250,9,30,15,600,Junk food,NV,200
+3,Sushi,International,120,0.5,26,3,480,Seafood based,NV,400
+4,Pad Thai,International,190,6,22,14,700,Rice based,V,250
+5,Chicken Fajitas,International,350,10,25,35,700,Meat based,NV,400
+6,Fish and Chips,International,290,12,35,12,450,Seafood based,NV,250
+7,Shakshuka,International,220,15,15,10,300,Milk based,V,150
+8,Hummus,International,180,14,12,4,180,Vegetarian based,V,100
+9,Beef Stroganoff,International,220,12,12,18,400,Meat based,NV,450
+10,Caesar Salad,International,130,8,8,7,230,Salad based,V,200
+11,Mushroom Risotto,International,180,6,28,4,480,Vegetarian based,V,300
+12,Tacos,International,250,10,25,18,480,Meat based,NV,150
+13,Grilled Salmon,International,220,12,0,25,250,Seafood based,NV,500
+14,Chicken Shawarma,International,350,14,25,25,850,Meat based,NV,200
+15,Stir-fry,International,150,5,20,5,200,Vegetarian based,V,100
+1,Hoppers,Sri Lankan,160,4,30,4,40,Rice based,V,80
+2,Lamprais,Sri Lankan,400,20,50,20,600,Rice based,NV,300
+3,Kottu Roti,Sri Lankan,500,25,50,25,800,Meat based,NV,200
+4,Parippu Curry,Sri Lankan,180,6,18,6,200,Vegetarian based,V,100
+5,Watalappam,Sri Lankan,300,15,30,10,150,Milk based,V,150
+6,Pol Sambol,Sri Lankan,100,8,4,2,50,Vegetarian based,V,50
+7,Fish Ambul Thiyal,Sri Lankan,200,8,12,20,400,Seafood based,NV,400
+8,Mutton Rolls,Sri Lankan,250,10,20,15,400,Meat based,NV,150
+9,Prawn Curry,Sri Lankan,250,10,12,25,500,Seafood based,NV,300
+10,Curd and Treacle,Sri Lankan,120,0,30,1,50,Milk based,V,50
+11,Lunumiris,Sri Lankan,50,3,2,1,20,Vegetarian based,V,20
+12,Kiribath,Sri Lankan,150,2,30,4,50,Rice based,V,50
+13,Konda Kavum,Sri Lankan,200,10,30,2,100,Junk food,V,50
+14,Gotu Kola Sambol,Sri Lankan,70,2,4,2,50,Salad based,V,80
+15,Seeni Sambol,Sri Lankan,100,8,4,1,50,Vegetarian based,V,70
+1,Dhokla,Gujarati,180,6,30,5,250,Snack based,V,50
+2,Khandvi,Gujarati,150,5,20,5,150,Snack based,V,80
+3,Undhiyu,Gujarati,250,10,35,8,500,Vegetarian based,V,200
+4,Kadhi,Gujarati,120,5,10,5,300,Salad based,V,50
+5,Fafda,Gujarati,250,10,30,5,400,Snack based,V,60
+6,Khakhra,Gujarati,120,3,20,3,150,Wheat based,V,40
+7,Handvo,Gujarati,200,8,25,10,250,Vegetarian based,V,100
+8,Gota,Gujarati,150,8,20,5,300,Snack based,V,70
+9,Dal Dhokli,Gujarati,300,10,40,12,400,Meat based,NV,150
+10,Bajra Rotla,Gujarati,150,5,25,3,100,Wheat based,V,30
+11,Methi Thepla,Gujarati,200,10,20,5,150,Wheat based,V,40
+12,Sev Tameta Nu Shaak,Gujarati,150,5,20,5,250,Vegetarian based,V,80
+13,Shrikhand,Gujarati,250,10,35,8,200,Milk based,V,100
+14,Dal Makhani,Gujarati,300,15,35,10,500,Meat based,NV,200
+15,Khaman,Gujarati,200,6,30,5,250,Snack based,V,50
+1,Kebab e Murgh,Afghani,150,7,10,10,300,Meat based,NV,150
+2,Mantoo,Afghani,200,10,20,10,250,Meat based,NV,200
+3,Kofta e Rize,Afghani,300,15,20,15,350,Meat based,NV,250
+4,Qabuli Pulao,Afghani,400,20,30,20,450,Rice based,NV,300
+5,Mantu,Afghani,250,10,20,10,300,Meat based,NV,180
+6,Chapli Kebab,Afghani,180,8,10,12,350,Meat based,NV,120
+7,Bolani,Afghani,150,5,20,5,250,Vegetarian based,V,80
+8,Shola,Afghani,200,10,20,8,250,Meat based,NV,150
+9,Ashak,Afghani,150,5,20,5,200,Vegetarian based,V,100
+10,Qurma e Lawand,Afghani,250,10,15,20,350,Meat based,NV,220
+11,Kabuli Pulao,Afghani,400,20,30,20,450,Rice based,NV,300
+12,Shorwa,Afghani,150,5,15,8,250,Meat based,NV,100
+13,Kadoo Borani,Afghani,100,5,10,5,150,Vegetarian based,V,50
+14,Tashkent Salad,Afghani,100,5,10,5,200,Salad based,V,70
+15,Kebab e Gosht,Afghani,200,10,10,15,350,Meat based,NV,180
+1,Vada Pav,Street Food,300,15,30,10,500,Wheat based,V,20
+2,Bhel Puri,Street Food,200,5,30,5,400,Vegetarian based,V,30
+3,Pani Puri,Street Food,100,3,15,3,200,Vegetarian based,V,20
+4,Aloo Tikki Chaat,Street Food,250,10,25,10,450,Vegetarian based,V,40
+5,Misal Pav,Street Food,400,20,35,15,550,Vegetarian based,V,50
+6,Samosa,Street Food,250,10,20,10,400,Vegetarian based,V,20
+7,Kachori,Street Food,300,12,25,12,450,Vegetarian based,V,25
+8,Kathi Roll,Street Food,350,15,30,15,500,Meat based,NV,60
+9,Bombay Sandwich,Street Food,250,10,25,10,400,Vegetarian based,V,35
+10,Tandoori Chicken,Street Food,300,15,10,25,450,Meat based,NV,70
+11,Pav Bhaji,Street Food,400,20,30,10,500,Vegetarian based,V,50
+12,Chole Bhature,Street Food,500,25,40,20,650,Wheat based,NV,60
+13,Momos,Street Food,150,5,20,5,300,Vegetarian based,V,30
+14,Ragda Pattice,Street Food,350,15,30,10,500,Vegetarian based,V,40
+15,Chicken Shawarma,Street Food,400,20,30,20,600,Meat based,NV,80
+1,Spaghetti Bolognese,Continental,350,12,50,15,600,Meat based,NV,150
+2,Grilled Chicken Salad,Continental,200,6,10,25,400,Salad based,NV,200
+3,Beef Burger,Continental,450,20,30,20,800,Junk food,NV,250
+4,Potato Gratin,Continental,300,15,30,5,450,Vegetarian based,V,180
+5,Beef Stroganoff,Continental,400,15,20,25,700,Meat based,NV,220
+6,Fish and Chips,Continental,400,20,35,15,550,Seafood based,NV,250
+7,Chicken Alfredo Pasta,Continental,500,20,40,25,800,Meat based,NV,280
+8,Caesar Salad,Continental,150,8,10,5,300,Salad based,V,150
+9,Grilled Fish with Lemon Butter Sauce,Continental,250,10,5,35,400,Seafood based,NV,300
+10,Steak and Mash Potatoes,Continental,600,30,40,30,900,Meat based,NV,400
+11,Mushroom Risotto,Continental,350,15,20,10,500,Vegetarian based,V,220
+12,Veggie Pizza,Continental,300,10,35,10,600,Wheat based,V,200
+13,Chicken Fajitas,Continental,350,15,20,25,550,Meat based,NV,250
+14,Ratatouille,Continental,250,10,20,5,450,Vegetarian based,V,180
+15,Beef Lasagna,Continental,450,20,30,25,800,Meat based,NV,280
+1,Nasi Lemak,Malaysian,400,15,45,20,800,Rice based,NV,150
+2,Char Kway Teow,Malaysian,500,25,40,20,1200,Noodle based,NV,180
+3,Hainanese Chicken Rice,Malaysian,350,10,45,25,600,Rice based,NV,200
+4,Assam Laksa,Malaysian,300,10,30,15,500,Noodle based,V,250
+5,Roti Canai,Malaysian,250,12,30,5,350,Wheat based,V,50
+6,Satay,Malaysian,300,15,10,20,500,Meat based,NV,180
+7,Mee Goreng,Malaysian,350,15,30,20,700,Noodle based,NV,150
+8,Rendang,Malaysian,400,20,15,30,800,Meat based,NV,300
+9,Nasi Goreng,Malaysian,450,25,40,15,1000,Rice based,NV,200
+10,Murtabak,Malaysian,350,18,20,15,600,Wheat based,NV,120
+11,Ketupat,Malaysian,200,5,40,10,300,Rice based,V,50
+12,Sambal Udang,Malaysian,250,10,20,15,400,Seafood based,NV,280
+13,Curry Laksa,Malaysian,450,25,30,20,1200,Noodle based,NV,220
+14,Chicken Satay,Malaysian,350,15,10,20,500,Meat based,NV,180
+15,Pisang Goreng,Malaysian,200,10,30,5,300,Fruits,V,80
