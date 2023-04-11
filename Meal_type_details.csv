@@ -1,9 +1,10 @@
 Meal_type_id,Meal_tye_score
 Fruits,100
-Wheat Based,70
-Rice Based,60
-Meat Based,75
-Sea Food,80
-Salad,80
-Milk Based,65
-Junk Food,-10
+Wheat based,70
+Rice based,60
+Meat based,75
+Sea food based,80
+Salad based,80
+Milk based,65
+Junk food,-10
+Vegetable based, 100
