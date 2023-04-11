@@ -13,7 +13,7 @@ def extract_columns(filename, num_columns, *column_indices):
         extracted_data.add(extracted_row)
     
     # Write the extracted data to a new CSV file
-    with open('City.csv', 'w', newline='') as f:
+    with open('Restaurant.csv', 'w', newline='') as f:
         writer = csv.writer(f)
         writer.writerow([data[0][i] for i in column_indices])
         for row in extracted_data:
@@ -22,4 +22,4 @@ def extract_columns(filename, num_columns, *column_indices):
     print(f'{num_columns} columns extracted and written to extracted_data.csv')
 
 # Example usage: extract columns 0 and 2 from example.csv
-extract_columns('zomato.csv', 2, 2, 3)
+extract_columns('zomato.csv', 13,0,1,3,4,7,8,10,12,13,14,15,17,20)

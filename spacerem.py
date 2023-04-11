@@ -1,7 +1,7 @@
 import csv
 
 # Open the input CSV file and create a list to store the corrected rows
-with open('Food.csv', newline='') as csvfile:
+with open('Restaurant.csv', newline='') as csvfile:
     reader = csv.reader(csvfile)
     rows = []
     for row in reader:
@@ -11,6 +11,6 @@ with open('Food.csv', newline='') as csvfile:
         rows.append(corrected_row)
 
 # Open the output CSV file and write the corrected rows
-with open('Food_final.csv', 'w', newline='') as csvfile:
+with open('Restaurant_final.csv', 'w', newline='') as csvfile:
     writer = csv.writer(csvfile)
     writer.writerows(rows)
