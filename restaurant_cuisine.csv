@@ -1,5 +1,4 @@
-col1,col2
-Restaurant ID,Cuisines
+Restaurant_id,Cuisine_id
 6317637,French
 6317637,Japanese
 6317637,Desserts

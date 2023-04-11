@@ -1,4 +1,4 @@
-Index,Food_name,Cuisine_id,Calories,Fat,Carbohydrates,Protein,Sodium,Meal_type_id,Veg_non_veg,Expected Price
+Food_id,Food_name,Cuisine_id,Calories,Fat,Carbohydrates,Protein,Sodium,Meal_type_id,Veg_non_veg,Expected_price
 1,Pad Thai,Thai,190,4.8,26.4,7.7,350,Rice based,NV,200
 2,Tom Yum Soup,Thai,30,0.5,5,2,125,Sea food based,NV,150
 3,Green Curry,Thai,118,6.2,14,1.9,300,Meat based,NV,250

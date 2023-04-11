@@ -1,0 +1,3 @@
+Meal_id,Meal_type_id,Person_id,Meal_time,Meal_date,Entry_type
+1,Fruits,2,17:52:31.499,2023-04-11,Self
+2,Fruits,1,17:52:31.499,2023-04-11,Track

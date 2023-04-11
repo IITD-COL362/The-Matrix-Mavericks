@@ -1,0 +1,4 @@
+User_id,Name,Address,City_id,Mail_id,Phone_number,Birthday,Sex,Weight,Account_creation_date
+1,Vishwas Kalani,"Satpura hostel,IIT Delhi",Delhi,8290984699,2002-06-14,M,55,2023-04-11
+1,Nischay Diwan,"Zanskar hostel,IIT Delhi",Delhi,9617723838,2002-01-10,M,75,2023-04-11
+1,Aman Bansal,"Satpura hostel,IIT Delhi",Delhi,7206995688,2002-06-07,M,56,2023-04-11
