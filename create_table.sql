@@ -1,14 +1,14 @@
+DROP TABLE IF EXISTS Meal;
+DROP TABLE IF EXISTS Food;
+DROP TABLE IF EXISTS Restaurant_Cuisine;
 DROP TABLE IF EXISTS Restaurant;
+DROP TABLE IF EXISTS User_data;
+DROP TABLE IF EXISTS Meal_Type_Details;
 DROP TABLE IF EXISTS Avg_Cost_for_Two;
 DROP TABLE IF EXISTS Rating;
-DROP TABLE IF EXISTS Restaurant_Cuisine;
 DROP TABLE IF EXISTS City;
 DROP TABLE IF EXISTS Country_Currency;
-DROP TABLE IF EXISTS Food;
-DROP TABLE IF EXISTS Meal;
-DROP TABLE IF EXISTS Meal_Type_Details;
 DROP TABLE IF EXISTS Currency;
-DROP TABLE IF EXISTS User_data;
 
 CREATE TABLE Currency (
     currency_id varchar primary key,
