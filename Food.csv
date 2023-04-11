@@ -762,7 +762,7 @@ Index,Food_name,Cuisine_id,Calories,Fat,Carbohydrates,Protein,Sodium,Meal_type_i
 761,Biryani,Hyderabadi,225,5,42,5,5,Rice based,NV,200
 762,Kheema,Hyderabadi,280,22,1,19,220,Meat based,NV,150
 763,Nihari,Hyderabadi,156,9.2,0,18.8,256,Meat based,NV,120
-764,Mirch ka Salan,Hyderabadi,163,17,7,1.4,134,Salad based,100
+764,Mirch ka Salan,Hyderabadi,163,17,7,1.4,134,Salad based,V,100
 765,Khubani ka Meetha,Hyderabadi,201,0.4,51.8,1.4,1,Milk based,V,80
 766,Sheer Korma,Hyderabadi,177,8.7,22.2,2.7,75,Milk based,V,90
 767,Lukhmi,Hyderabadi,312,25,22,5,120,Meat based,NV,80
