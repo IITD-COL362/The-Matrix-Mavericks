@@ -18,13 +18,13 @@ CREATE TABLE Restaurant (
     address varchar NOT NULL,
     latitude float NOT NULL,
     longitude float NOT NULL,
-    avg_cost_for_two int NOT NULL,
-    has_table_booking varchar(3) NOT NULL,
-    has_online_delivery varchar(3) NOT NULL,
-    is_delivering_now varchar(3) NOT NULL,
-    switch_to_order_menu varchar(3) NOT NULL,
-    aggregate_rating int NOT NULL,
-    votes int NOT NULL
+    avg_cost_for_two int ,
+    has_table_booking varchar(3) ,
+    has_online_delivery varchar(3) ,
+    is_delivering_now varchar(3) ,
+    switch_to_order_menu varchar(3) ,
+    aggregate_rating int ,
+    votes int
 ) ;
 
 CREATE TABLE Avg_Cost_for_Two (
@@ -36,7 +36,7 @@ CREATE TABLE Avg_Cost_for_Two (
 
 CREATE TABLE Rating (
     rating int PRIMARY KEY,
-    rating_colour varchar NOT NULL
+    rating_colour varchar(11) NOT NULL
 ) ;
 
 CREATE TABLE Restaurant_Cuisine (
@@ -59,18 +59,19 @@ CREATE TABLE Food (
     food_id int primary key,
     food_name varchar NOT NULL,
     cuisine_id varchar not null,
-    calories int not null,
-    fat int not null,
-    carbohydrates int not null,
-    protein int not null,
-    sodium int not null,
-    meal_type_id varchar not null,
-    veg_non_veg varchar(2) not null
+    calories float ,
+    fat float ,
+    carbohydrates float ,
+    protein float ,
+    sodium float ,
+    meal_type_id varchar(16) ,
+    veg_non_veg varchar(2),
+	expected_price int
 ) ;
 
 CREATE TABLE Meal (
     meal_id int primary key,
-    meal_type_id varchar not null,
+    meal_type_id varchar(16) not null,
     person_id int not null,
     meal_time time not null,
     meal_date date not null,
@@ -78,7 +79,7 @@ CREATE TABLE Meal (
 ) ;
 
 CREATE TABLE Meal_Type_Details (
-    meal_type_id varchar primary key,
+    meal_type_id varchar(16) primary key,
     meal_type_score int not null
 ) ;
 
@@ -92,12 +93,12 @@ CREATE TABLE Currency (
 CREATE TABLE User (
     user_id int primary key,
     name varchar not null,
-    address varchar not null,
-    city_id varchar not null,
+    address varchar,
+    city_id varchar,
     mail_id varchar not null,
     phone_number numeric(10,0) not null,
-    birthday date not null,
-    sex varchar(1) not null,
-    weight int not null,
+    birthday date,
+    sex varchar(1),
+    weight int,
     account_creation_date date not null
 ) ;
