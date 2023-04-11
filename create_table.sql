@@ -10,6 +10,57 @@ DROP TABLE IF EXISTS Meal_Type_Details;
 DROP TABLE IF EXISTS Currency;
 DROP TABLE IF EXISTS User_data;
 
+CREATE TABLE Currency (
+    currency_id varchar primary key,
+    inr_conversion float not null
+) ;
+
+CREATE TABLE Country_Currency (
+    country_name varchar primary key,
+    currency_id varchar NOT NULL,
+	CONSTRAINT fk_country_currency
+	FOREIGN KEY(currency_id)
+	REFERENCES Currency(currency_id) 
+) ;
+
+CREATE TABLE City (
+    city_id varchar primary key,
+    country_name varchar NOT NULL,
+	CONSTRAINT fk_city_country
+	FOREIGN KEY(country_name)
+	REFERENCES Country_Currency(country_name) 
+) ;
+
+CREATE TABLE Rating (
+    rating float PRIMARY KEY,
+    rating_colour varchar(11) NOT NULL
+) ;
+
+CREATE TABLE Avg_Cost_for_Two (
+    high int NOT NULL,
+    low int NOT NULL,
+    price_range varchar(11) NOT NULL,
+    primary key (high,low)
+) ;
+
+CREATE TABLE Meal_Type_Details (
+    meal_type_id varchar(16) primary key,
+    meal_type_score int not null
+) ;
+
+CREATE TABLE User_data (
+    user_id int primary key,
+    name varchar not null,
+    address varchar,
+    city_id varchar,
+    mail_id varchar not null,
+    phone_number numeric(10,0) not null,
+    birthday date,
+    sex varchar(1) check (sex in ('M','F','O')),
+    weight int,
+    account_creation_date date not null,
+    CONSTRAINT valid_email CHECK (mail_id ~* '^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$')
+);
 
 CREATE TABLE Restaurant (
     restaurant_id int Primary KEY,
@@ -30,17 +81,6 @@ CREATE TABLE Restaurant (
 	REFERENCES City(city_id) 
 ) ;
 
-CREATE TABLE Avg_Cost_for_Two (
-    high int NOT NULL,
-    low int NOT NULL,
-    price_range varchar(11) NOT NULL,
-    primary key (high,low)
-) ;
-
-CREATE TABLE Rating (
-    rating float PRIMARY KEY,
-    rating_colour varchar(11) NOT NULL
-) ;
 
 CREATE TABLE Restaurant_Cuisine (
     restaurant_id int NOT NULL,
@@ -49,22 +89,6 @@ CREATE TABLE Restaurant_Cuisine (
 	CONSTRAINT fk_res_cus
 	FOREIGN KEY(restaurant_id)
 	REFERENCES Restaurant(restaurant_id) 
-) ;
-
-CREATE TABLE City (
-    city_id varchar primary key,
-    country_name varchar NOT NULL,
-	CONSTRAINT fk_city_country
-	FOREIGN KEY(country_name)
-	REFERENCES Country_Currency(country_name) 
-) ;
-
-CREATE TABLE Country_Currency (
-    country_name varchar primary key,
-    currency_id varchar NOT NULL,
-	CONSTRAINT fk_country_currency
-	FOREIGN KEY(currency_id)
-	REFERENCES Currency(currency_id) 
 ) ;
 
 CREATE TABLE Food (
@@ -98,29 +122,3 @@ CREATE TABLE Meal (
 	FOREIGN KEY(person_id)
 	REFERENCES User_data(user_id) 
 ) ;
-
-CREATE TABLE Meal_Type_Details (
-    meal_type_id varchar(16) primary key,
-    meal_type_score int not null
-) ;
-
-
-CREATE TABLE Currency (
-    currency_id varchar primary key,
-    inr_conversion float not null
-) ;
-
-
-CREATE TABLE User_data (
-    user_id int primary key,
-    name varchar not null,
-    address varchar,
-    city_id varchar,
-    mail_id varchar not null,
-    phone_number numeric(10,0) not null,
-    birthday date,
-    sex varchar(1) check (sex in ('M','F','O')),
-    weight int,
-    account_creation_date date not null,
-    CONSTRAINT valid_email CHECK (mail_id ~* '^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,}$')
-);
