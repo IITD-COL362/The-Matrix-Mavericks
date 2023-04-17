@@ -1,0 +1,79 @@
+\set A1 true
+\set A2 true
+\set A3 true
+\set A4 true
+\set A5 true
+\set A6 true
+\set A7 true
+\set A8 true
+\set A9 true
+\set B1 '\'Chokhi Dhani\''
+\set B2 '\'Jaipur\''
+\set B31 100
+\set B32 1000
+\set B4 '\'NO\''
+\set B5 '\'NO\''
+\set B6 '\'NO\''
+\set B7 '\'NO\''
+\set B8 3
+\set B9 100
+-- filter restaurants
+select * from restaurant where (:A1 or name=:B1) and (:A2 or city_id=:B2) and (:A3 or (avg_cost_for_two>=:B31 and avg_cost_for_two<:B32)) and (:A4 or has_table_booking=:B4) and (:A5 or has_online_delivery=:B5) and (:A6 or is_delivering_now=:B6) and (:A7 or switch_to_order_menu=:B7) and (:A8 or aggregate_rating>=:B8) and (:A9 or votes>=:B9) order by aggregate_rating desc;
+
+
+\set CN '\'India\''
+-- filter restaurants based on country
+with 
+    var as (select * from restaurant where (:A1 or name=:B1) and (:A2 or city_id=:B2) and (:A3 or (avg_cost_for_two>=:B31 and avg_cost_for_two<:B32)) and (:A4 or has_table_booking=:B4) and (:A5 or has_online_delivery=:B5) and (:A6 or is_delivering_now=:B6) and (:A7 or switch_to_order_menu=:B7) and (:A8 or aggregate_rating>=:B8) and (:A9 or votes>=:B9)),
+    nvar as (select * from var,city where restaurant.city_id=city.city_id and country_name=:CN)
+select * from nvar order by aggregate_rating desc;
+
+
+\set C0 true
+\set C1 true
+\set C2 true
+\set C3 true
+\set C4 true
+\set C5 true
+\set C6 true
+\set D7 true
+\set D0 '\'Salad\''
+\set D1 100
+\set D2 100
+\set D31 0
+\set D32 100
+\set D41 0
+\set D42 100
+\set D5 0
+\set D6 '\'Wheat Based\''
+\set D7 '\'V\''
+-- filter food items based on attributes
+select * from food where (:C0 or cuisine_id=:D0) and (:C1 or calories>=:D1) and (:C2 or fat<=:D2) and (:C3 or (carbohydrates>=:D31 and carbohydrates<=:D32)) and (:C4 or (protein>=:D41 and protein<=:D42)) and (:C5 or sodium>=:D5) and (:C6 or meal_type_id=:D6) and (:C7 or veg_non_veg=:D7) order by food_id asc;
+
+
+-- display food items of a given restaurant
+\set CR '\'Choki Dhani\''
+with 
+    var as (select * from restaurant where (:A1 or name=:B1) and (:A2 or city_id=:B2) and (:A3 or (avg_cost_for_two>=:B31 and avg_cost_for_two<:B32)) and (:A4 or has_table_booking=:B4) and (:A5 or has_online_delivery=:B5) and (:A6 or is_delivering_now=:B6) and (:A7 or switch_to_order_menu=:B7) and (:A8 or aggregate_rating>=:B8) and (:A9 or votes>=:B9)),
+    var2 as (select * from food where (:C0 or cuisine_id=:D0) and (:C1 or calories>=:D1) and (:C2 or fat<=:D2) and (:C3 or (carbohydrates>=:D31 and carbohydrates<=:D32)) and (:C4 or (protein>=:D41 and protein<=:D42)) and (:C5 or sodium>=:D5) and (:C6 or meal_type_id=:D6) and (:C7 or veg_non_veg=:D7)),
+    nvar as (select cuisine_id from restaurant_cuisine,var where restaurant_cuisine.restaurant_id=var.restaurant_id),
+    fvar as (select * from var2,nvar where var2.cuisine_id=nvar.cuisine_id)
+select * from var,fvar where var.name=:CR;
+
+
+
+
+\set TL '\'2023-03-17\''
+
+select restaurant_id,count(*) as noo from meal where meal.entry_type='Track' and meal.meal_date >= :TL group by restaurant_id order by noo desc limit 5;
+
+
+select food_id,count(*) as noo from meal where meal.entry_type='Track' and meal.meal_date >= :TL group by food_id order by noo desc limit 5;
+
+
+select meal_type_id,count(*) as noo from meal where meal.entry_type='Track' and meal.meal_date >= :TL group by meal_type_id order by noo desc limit 5;
+
+with
+    var as (select food_id,count(*) as noo from meal where meal.entry_type='Track' and meal.meal_date >= :TL group by food_id),
+    nvar as (select cuisine_id,count(*) as noc from food,var where food.food_id=var.food_id group by cuisine_id order by noc desc limit 5)
+select * from nvar;
