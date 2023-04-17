@@ -114,6 +114,8 @@ CREATE TABLE Meal (
     meal_time time not null,
     meal_date date not null,
     entry_type varchar(5) not null check (entry_type in ('Self','Track')),
+    restaurant_id int,
+    food_id int,
 	CONSTRAINT fk_meal_mealtype
 	FOREIGN KEY(meal_type_id)
 	REFERENCES Meal_Type_Details(meal_type_id) ,
