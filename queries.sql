@@ -26,7 +26,7 @@ select * from restaurant where (:A1 or name=:B1) and (:A2 or city_id=:B2) and (:
 -- filter restaurants based on country
 with 
     var as (select * from restaurant where (:A1 or name=:B1) and (:A2 or city_id=:B2) and (:A3 or (avg_cost_for_two>=:B31 and avg_cost_for_two<:B32)) and (:A4 or has_table_booking=:B4) and (:A5 or has_online_delivery=:B5) and (:A6 or is_delivering_now=:B6) and (:A7 or switch_to_order_menu=:B7) and (:A8 or aggregate_rating>=:B8) and (:A9 or votes>=:B9)),
-    nvar as (select * from var,city where restaurant.city_id=city.city_id and country_name=:CN)
+    nvar as (select * from var,city where var.city_id=city.city_id and country_name=:CN)
 select * from nvar order by aggregate_rating desc;
 
 --q3--
@@ -37,6 +37,7 @@ select * from nvar order by aggregate_rating desc;
 \set C4 true
 \set C5 true
 \set C6 true
+\set C7 true
 \set D7 true
 \set D0 '\'Salad\''
 \set D1 100
@@ -56,7 +57,7 @@ select * from food where (:C0 or cuisine_id=:D0) and (:C1 or calories>=:D1) and 
 \set GR 19687969
 with 
     nvar as (select cuisine_id from restaurant_cuisine where restaurant_cuisine.restaurant_id=:GR),
-    var2 as (select * from (select * from food,nvar where food.cuisine_id=nvar.cuisine_id) as tvar where (:C0 or cuisine_id=:D0) and (:C1 or calories>=:D1) and (:C2 or fat<=:D2) and (:C3 or (carbohydrates>=:D31 and carbohydrates<=:D32)) and (:C4 or (protein>=:D41 and protein<=:D42)) and (:C5 or sodium>=:D5) and (:C6 or meal_type_id=:D6) and (:C7 or veg_non_veg=:D7)),
+    var2 as (select * from (select food.* from food,nvar where food.cuisine_id=nvar.cuisine_id) as tvar where (:C0 or cuisine_id=:D0) and (:C1 or calories>=:D1) and (:C2 or fat<=:D2) and (:C3 or (carbohydrates>=:D31 and carbohydrates<=:D32)) and (:C4 or (protein>=:D41 and protein<=:D42)) and (:C5 or sodium>=:D5) and (:C6 or meal_type_id=:D6) and (:C7 or veg_non_veg=:D7))
 select * from var2;
 
 
@@ -110,7 +111,6 @@ from t,meal_type_details where t.meal_type_id = meal_type_details.meal_type_id;
 \set date1 '\'2023-04-17\''
 \set date2 '\'2023-04-11\''
 
-with t as 
 select 1.0*count(*)/7 as avg_meals from meal where person_id = :X and meal_date >= :date2 and meal_date <= :date1;
 
 --q13--
