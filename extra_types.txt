@@ -1,9 +1,0 @@
-dessert
-beverages
-patisserie
-sweet based
-sweet
-pastry
-noodle based
-must change 'Díner' -> Diner
-Snack based
