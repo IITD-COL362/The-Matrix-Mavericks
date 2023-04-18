@@ -1,3 +1,9 @@
+--Indexes & views--
+create index meal_date_index on meal(meal_date);
+create index meal_personid_index on meal(person_id);
+create index restaurant_cityid on restaurant(city_id);
+create index food_cuisine on food(cuisine_id);
+
 --q1--
 \set A1 true
 \set A2 true
@@ -9,7 +15,7 @@
 \set A8 true
 \set A9 true
 \set B1 '\'Chokhi Dhani\''
-\set B2 '\'Jaipur\''
+\set B2 '\'New Delhi\''
 \set B31 100
 \set B32 1000
 \set B4 '\'NO\''
@@ -19,7 +25,7 @@
 \set B8 3
 \set B9 100
 -- filter restaurants
-select * from restaurant where (:A1 or name=:B1) and (:A2 or city_id=:B2) and (:A3 or (avg_cost_for_two>=:B31 and avg_cost_for_two<:B32)) and (:A4 or has_table_booking=:B4) and (:A5 or has_online_delivery=:B5) and (:A6 or is_delivering_now=:B6) and (:A7 or switch_to_order_menu=:B7) and (:A8 or aggregate_rating>=:B8) and (:A9 or votes>=:B9) order by aggregate_rating desc;
+select * from restaurant where (:A1 or name=:B1) and (:A2 or city_id=:B2) and (:A3 or (avg_cost_for_two>=:B31 and avg_cost_for_two<:B32)) and (:A4 or has_table_booking=:B4) and (:A5 or has_online_delivery=:B5) and (:A6 or is_delivering_now=:B6) and (:A7 or switch_to_order_menu=:B7) and (:A8 or aggregate_rating>=:B8) and (:A9 or votes>=:B9) order by aggregate_rating desc, votes desc;
 
 --q2--
 \set CN '\'India\''
@@ -92,8 +98,8 @@ select * from nvar;
 
 --q10--
 \set X 2
-\set date1 '\'2023-04-17\''
-\set date2 '\'2023-04-11\''
+\set date1 '\'2021-04-17\''
+\set date2 '\'2020-04-11\''
 select count(*) from meal where person_id = :X and entry_type = 'Track' and meal_date >= :date2 and meal_date <= :date1;
 
 --q11--
@@ -109,7 +115,7 @@ from t,meal_type_details where t.meal_type_id = meal_type_details.meal_type_id;
 --q12--
 \set X 2
 \set date1 '\'2023-04-17\''
-\set date2 '\'2023-04-11\''
+\set date2 '\'2020-04-11\''
 
 select 1.0*count(*)/7 as avg_meals from meal where person_id = :X and meal_date >= :date2 and meal_date <= :date1;
 
@@ -130,3 +136,30 @@ from t),
 val_table as
 (select meal_type,sum(number_of_meals) as count_meals from t group by meal_type)
 select meal_type,100.0*count_meals/total_meals as percent_of_meals from val_table,sum_table;
+
+--q14--
+\set Lt 77.257106
+\set Lo 28.570142
+
+select restaurant_id, 111.111 * DEGREES(ACOS(COS(RADIANS(:Lt)) * COS(RADIANS(latitude)) * COS(RADIANS(longitude) - RADIANS(:Lo)) + SIN(RADIANS(:Lt)) * SIN(RADIANS(latitude)))) AS distance_in_km from restaurant order by distance_in_km asc limit 100;
+
+--q15--
+-- filter restaurants
+with filter_rest as (
+select * from restaurant where (:A1 or name=:B1) and (:A2 or city_id=:B2) and (:A4 or has_table_booking=:B4) and (:A5 or has_online_delivery=:B5) and (:A6 or is_delivering_now=:B6) and (:A7 or switch_to_order_menu=:B7) and (:A8 or aggregate_rating>=:B8) and (:A9 or votes>=:B9)
+)
+-- currency conversion
+select filter_rest.*, currency.Inr_conversion*filter_rest.avg_cost_for_two as avg_cost_for_two_INR,currency.Inr_conversion
+from filter_rest, currency, city, country_currency 
+where country_currency.currency_id = currency.currency_id and 
+    filter_rest.city_id = city.city_id and 
+    city.country_name = country_currency.country_name and 
+    ((currency.Inr_conversion*filter_rest.avg_cost_for_two >= :B31 and
+    currency.Inr_conversion*filter_rest.avg_cost_for_two < :B32) or :A3) 
+order by avg_cost_for_two_INR asc, aggregate_rating desc, votes desc;
+
+--dropping--
+drop index if exists meal_date_index;
+drop index if exists meal_personid_index;
+drop index if exists restaurant_cityid;
+drop index if exists food_cuisine;
