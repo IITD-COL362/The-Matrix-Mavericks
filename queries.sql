@@ -65,8 +65,9 @@ select * from var2;
 with 
     var as (select * from food where (:C0 or cuisine_id=:D0) and (:C1 or calories>=:D1) and (:C2 or fat<=:D2) and (:C3 or (carbohydrates>=:D31 and carbohydrates<=:D32)) and (:C4 or (protein>=:D41 and protein<=:D42)) and (:C5 or sodium>=:D5) and (:C6 or meal_type_id=:D6) and (:C7 or veg_non_veg=:D7) order by food_id asc),
     nvar as (select cuisine_id,count(*) as noi from var group by cuisine_id),
-    fvar as (select restaurant_id,sum(noi) as tnoi from restaurant_cuisine,nvar where restaurant_cuisine.cuisine_id=nvar.cuisine_id group by restaurant_id)
-select * from restaurant,fvar where fvar.restaurant_id=restaurant.restaurant_id order by tnoi desc,name asc;
+    fvar as (select restaurant_id,sum(noi) as tnoi from restaurant_cuisine,nvar where restaurant_cuisine.cuisine_id=nvar.cuisine_id group by restaurant_id),
+    tvar as (select * from (select * from restaurant,fvar where restaurant.restaurant_id=fvar.restaurant_id) as tab where (:A1 or name=:B1) and (:A2 or city_id=:B2) and (:A3 or (avg_cost_for_two>=:B31 and avg_cost_for_two<:B32)) and (:A4 or has_table_booking=:B4) and (:A5 or has_online_delivery=:B5) and (:A6 or is_delivering_now=:B6) and (:A7 or switch_to_order_menu=:B7) and (:A8 or aggregate_rating>=:B8) and (:A9 or votes>=:B9) order by aggregate_rating desc)
+select * from tvar order by tnoi desc,name asc;
 
 
 
