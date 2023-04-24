@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+	{% for tup in restaurant %}
+	<title>{{ tup.1 }} Details</title>
+	{% endfor %}
+	<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+	<style>
+		body {
+			background-color: #f2f2f2;
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+		}
+
+		h1 {
+			font-family: 'Caveat', cursive;
+			font-size: 6em;
+			text-align: center;
+			margin-top: 50px;
+			margin-bottom: 30px;
+			text-shadow: 2px 2px #f2f2f2;
+			color: #F6C90E;
+		}
+
+		h4 {
+			font-size: 1.5em;
+			margin: 0;
+			padding: 8px;
+			text-align: left;
+			color: #1b1818;
+		}
+
+		.container {
+			background-color: #ffffff;
+			border: 1px solid #cccccc;
+			border-radius: 10px;
+			box-shadow: 5px 5px 10px #aaaaaa;
+			margin: 50px auto;
+			max-width: 800px;
+			padding: 20px;
+		}
+
+		.btn {
+			background-color: #F6C90E;
+			border: none;
+			border-radius: 5px;
+			color: #ffffff;
+			cursor: pointer;
+			font-size: 1.2em;
+			margin: 20px 0;
+			padding: 10px 20px;
+			text-align: center;
+			text-decoration: none;
+			transition: background-color 0.3s;
+		}
+
+		.btn:hover {
+			background-color: #3e8e41;
+		}
+	</style>
+
+	<script>
+		function orderMenu(url) {
+			window.location.href = url;
+		}
+	</script>
+
+</head>
+<body>
+	{% for tup in restaurant %}
+	<div class="container">
+		<h1>{{ tup.1 }}</h1>
+		<h4>Restaurant Id:  {{ tup.0 }}</h4>
+		<h4>City:  {{ tup.2 }}</h4>
+		<h4>Address:  {{ tup.3 }}</h4>
+		<h4>Latitude:  {{ tup.4 }}</h4>
+		<h4>Longitude:  {{ tup.5 }}</h4>
+		<h4>Average Cost(for 2):  {{ tup.6 }}</h4>
+		<h4>Table booking available:  {{ tup.7 }}</h4>
+		<h4>Online delivery:  {{ tup.8 }}</h4>
+		<h4>Delivering Now:  {{ tup.9 }}</h4>
+		<h4>Rating(out of 5):  {{ tup.11 }}</h4>
+		<h4>Number Of Votes:  {{ tup.12 }}</h4>
+		<button class="btn" onclick="orderMenu('menu')">Order Menu</button>
+	</div>
+	{% endfor %}
+</body>
+</html>
+

@@ -1,0 +1,18 @@
+<!-- city_list.html -->
+<table>
+	<thead>
+	  <tr>
+		<th>Name</th>
+		<th>Distance</th>
+	  </tr>
+	</thead>
+	<tbody>
+	  {% for restaurant in restaurant_list %}
+		<tr>
+			<td><a href="../restaurants/{{restaurant.0}}">{{ restaurant.1 }}</a></td>
+		  <td>{{ restaurant.2 }}</td>
+		</tr>
+	  {% endfor %}
+	</tbody>
+  </table>
+  

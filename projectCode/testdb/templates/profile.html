@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>User Profile</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			margin: 0;
+			padding: 0;
+			background-color: #f7f7f7;
+		}
+
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 20px;
+			background-color: #fff;
+			box-shadow: 0px 0px 10px #ddd;
+			border-radius: 10px;
+		}
+
+		h1 {
+			font-size: 36px;
+			margin-bottom: 20px;
+		}
+
+		p {
+			font-size: 18px;
+			margin-bottom: 10px;
+		}
+
+		button {
+			background-color: #ffffff;
+			border: none;
+			border-radius: 5px;
+			color: #ffffff;
+			cursor: pointer;
+			font-size: 1em;
+			margin: 20px 0;
+			padding: 10px 20px;
+			text-align: center;
+			text-decoration: none;
+			transition: background-color 0.3s;
+		}
+
+		.update-btns {
+			margin-top: 20px;
+		}
+
+		li {
+			margin-right: 20px;
+		}
+
+		a {
+			background-color: #F6C90E;
+			border: none;
+			border-radius: 5px;
+			color: #ffffff;
+			cursor: pointer;
+			font-size: 1em;
+			margin: 20px 0;
+			padding: 10px 20px;
+			text-align: center;
+			text-decoration: none;
+			transition: background-color 0.3s;
+		}
+
+		a:hover {
+			background-color: #3e8e41;
+		}
+
+	</style>
+</head>
+<body>
+	<div class="container">
+		<h1>User Profile</h1>
+		{% if data %}
+			{% for row in data %}
+				<p>Name: {{ row.1 }}</p>
+				<p>Address: {{ row.2 }}</p>
+				<p>City name: {{ row.3 }}</p>
+				<p>Mail id: {{ row.4 }}</p>
+				<p>Phone number: {{ row.5 }}</p>
+				<p>Birthdate : {{ row.6 }}</p>
+				<p>Sex : {{ row.7 }}</p>
+				<p>Weight : {{ row.8 }}</p>
+				<p>Account creation date : {{ row.9 }}</p>
+			{% endfor %}
+			<div class="update-btns">
+				<button><a href="update_city/">Update City</a></button>
+				<button><a href="update_address/">Update Address</a></button>
+				<button><a href="update_phonenumber/">Update Phone Number</a></button>
+				<button><a href="update_mailid/">Update Mail Id</a></button>
+				<button><a href="update_weight/">Update Weight</a></button>
+			</div>
+		{% else %}
+			<p>No data found for this user.</p>
+		{% endif %}
+	</div>
+</body>
+</html>

@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Restaurants near me</title>
+</head>
+<body>
+    <h1>Take a minute to search your latitude and longitude on google !</h1>
+    <h3>We are under construction, we will soon search your location !</h3>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

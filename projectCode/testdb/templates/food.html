@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+        Search food items using filters
+        <hr>
+        <form method="post">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit">Submit</button>
+        </form>
+            <hr>
+            <table>
+                <thead>
+                  <tr>
+                    <th>food id</th>
+                    <th>food name</th>
+                    <th>cuisine</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  {% for food in foods %}
+                    <tr>
+                      <td>{{ food.0 }}</td>
+                      <td>{{ food.1 }}</td>
+                      <td>{{ food.2 }}</td>
+                    </tr>
+                  {% endfor %}
+                </tbody>
+              </table>
+
+    </center>
+</body>
+
+</html>

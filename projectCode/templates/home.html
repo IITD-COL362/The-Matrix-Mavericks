@@ -1,0 +1,33 @@
+<!-- templates/home.html-->
+{% extends 'base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+{% if user.is_authenticated %}
+  <div class="welcome">
+    <h2>Hi {{ user.username }}!</h2>
+  </div>
+  <nav>
+    <ul>
+      <li><a href="profile/">My Profile</a></li>
+      <li><a href="dashboard/">Dashboard</a></li>
+      <li><a href="trending/">Trending Page</a></li>
+      <li><a href="close_rest/">Restaurants Near Me</a></li>
+    </ul>
+    <ul>
+      <li><a href="food/">Search Dishes</a></li>
+      <li><a href="restaurant_search/">Search Restaurants</a></li>
+      <li><a href="mix/">Search Restaurants by Dishes</a></li>
+    </ul>
+    <ul>
+      <li><a href="{% url 'logout' %}">Log Out</a></li>
+    </ul> 
+  </nav>
+{% else %}
+  <div class="login">
+    <p>You are not logged in</p>
+    <a href="{% url 'login' %}">Log In</a>
+  </div>
+{% endif %}
+{% endblock %}
