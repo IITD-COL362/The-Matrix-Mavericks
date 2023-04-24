@@ -49,7 +49,7 @@ CREATE TABLE Meal_Type_Details (
 ) ;
 
 CREATE TABLE User_data (
-    user_id int primary key,
+    user_id varchar(20) primary key,
     name varchar not null,
     address varchar,
     city_id varchar,
@@ -110,7 +110,7 @@ CREATE TABLE Food (
 CREATE TABLE Meal (
     meal_id int primary key,
     meal_type_id varchar(16) not null,
-    person_id int not null,
+    person_id varchar(20) not null,
     meal_time time not null,
     meal_date date not null,
     entry_type varchar(5) not null check (entry_type in ('Self','Track')),
