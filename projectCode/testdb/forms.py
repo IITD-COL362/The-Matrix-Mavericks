@@ -109,3 +109,8 @@ class MixForm(forms.Form):
     hod = forms.CharField(label= 'has online delivery' ,required = False, widget=forms.Select(choices = yes_no))
     idn = forms.CharField(label= 'is delevering now' ,required = False, widget=forms.Select(choices = yes_no))
     stom = forms.CharField(label= 'switch to order menu' ,required = False, widget=forms.Select(choices = yes_no))
+    
+class AddRating(forms.Form):
+    restaurant = forms.CharField(label='Enter the name of restaurant to rate :')
+    rating = forms.IntegerField(label='Enter the rating out of 5 :')
+    
