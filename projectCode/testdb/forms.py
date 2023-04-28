@@ -111,6 +111,5 @@ class MixForm(forms.Form):
     stom = forms.CharField(label= 'switch to order menu' ,required = False, widget=forms.Select(choices = yes_no))
     
 class AddRating(forms.Form):
-    restaurant = forms.CharField(label='Enter the name of restaurant to rate :')
     rating = forms.IntegerField(label='Enter the rating out of 5 :')
     

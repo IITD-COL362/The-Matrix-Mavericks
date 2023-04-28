@@ -5,10 +5,10 @@ from django.views.generic.base import TemplateView
 urlpatterns = [
 	path('city-list/', views.city_list, name='city_list'),
 	path('meal-count/', views.meal_count, name='meal_count'),
-	path('rate-rest/', views.rate_restaurant, name='rate_restaurant'),
 	path('trending/', views.trending, name='trending'),
 	path('restaurants/<str:restaurant_id>/', views.restaurant_detail, name='restaurant_detail'),
 	path('restaurants/<str:restaurant_id>/menu/', views.menu, name='menu'),
+    path('restaurants/<str:restaurant_id>/rate-rest/', views.rate_restaurant, name='rate_restaurant'),
     path('restaurants/<str:restaurant_id>/menu/<str:food_id>/<str:meal_type>/', views.track_meal, name='track'),
 	path('dashboard/', views.dashboard, name='dashboard'),
 	path('close_rest/', views.restaurants_nearme, name='restaurants_nearme'),

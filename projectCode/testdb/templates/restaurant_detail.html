@@ -64,6 +64,9 @@
 		function orderMenu(url) {
 			window.location.href = url;
 		}
+		function raterest(url) {
+			window.location.href = url;
+		}
 	</script>
 
 </head>
@@ -83,6 +86,7 @@
 		<h4>Rating(out of 5):  {{ tup.11 }}</h4>
 		<h4>Number Of Votes:  {{ tup.12 }}</h4>
 		<button class="btn" onclick="orderMenu('menu')">Order Menu</button>
+		<button class="btn" onclick="raterest('rate-rest')">Rate Restaurant</button>
 	</div>
 	{% endfor %}
 </body>

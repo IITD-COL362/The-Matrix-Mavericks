@@ -573,22 +573,21 @@ def filter_mix(request) :
 		restaurants={}
 	return render(request,'mix.html',{'form':form,'restaurants':restaurants})
 
-def rate_restaurant(request):
+def rate_restaurant(request,restaurant_id):
 	if request.method == 'POST':
 		form = AddRating(request.POST)
 		if form.is_valid():
-			restaurant_name = form.cleaned_data['restaurant']
 			added_rating = form.cleaned_data['rating']
 			with connection.cursor() as cursor:
-				cursor.execute(f"SELECT votes,aggregate_rating from restaurant where name = '{restaurant_name}'")
+				cursor.execute(f"SELECT votes,aggregate_rating from restaurant where restaurant_id = '{restaurant_id}'")
 				data = cursor.fetchall()
 				votes = data[0][0]
 				rating = data[0][1]
 			new_votes = votes+1
 			new_rating = (votes*rating+added_rating)/new_votes
 			with connection.cursor() as cursor:
-				cursor.execute(f"update restaurant set votes = {new_votes} where name = '{restaurant_name}'")
-				cursor.execute(f"update restaurant set aggregate_rating = {new_rating} where name = '{restaurant_name}'")
+				cursor.execute(f"update restaurant set votes = {new_votes} where restaurant_id = '{restaurant_id}'")
+				cursor.execute(f"update restaurant set aggregate_rating = {new_rating} where restaurant_id = '{restaurant_id}'")
 			return render(request,'successful.html',{'form':form})
 	else:
 		form = AddRating()
