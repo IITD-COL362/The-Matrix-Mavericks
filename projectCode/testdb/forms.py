@@ -9,7 +9,7 @@ with connection.cursor() as cursor:
     cities = cursor.fetchall()
 ccountry=[('Select','Select')]+[(country[0],country[0]) for country in countries]
 ccity=[('Select','Select')]+[(city[0],city[0]) for city in cities]
-yes_no=[('Select','Select'),('YES','YES'),('NO','NO')]
+yes_no=[('Select','Select'),('Yes','Yes'),('No','No')]
 rating_choices=[(0,0),(1,1),(2,2),(3,3),(4,4),(5,5)]
 votes_choices=[(0,0),(100,100),(200,200),(300,300),(400,400),(500,500),(1000,1000),(10000,10000)]
 lavg=[(0,0),(100,100),(200,200),(300,300),(400,400),(500,500),(1000,1000),(10000,10000)]
@@ -112,4 +112,18 @@ class MixForm(forms.Form):
     
 class AddRating(forms.Form):
     rating = forms.IntegerField(label='Enter the rating out of 5 :')
+    
+class AddRest(forms.Form):
+    name = forms.CharField(label='Enter the name of restaurant :')
+    city = forms.CharField(label='Enter the city :')
+    address = forms.CharField(label='Enter the address :')
+    latitude = forms.FloatField(label = 'Enter the latitude :' )
+    longitude = forms.FloatField(label = 'Enter the longitude :')
+    avg_cost_for_two = forms.FloatField(label_suffix= 'Enter the approximate average cost for two in local currency :')
+    htb = forms.CharField(label= 'Does it have a table booking :' , widget=forms.Select(choices = yes_no))
+    hod = forms.CharField(label= 'Does it have online delivery :' , widget=forms.Select(choices = yes_no))
+    idn = forms.CharField(label= 'Does it delivers now :' , widget=forms.Select(choices = yes_no))
+    stom = forms.CharField(label= 'Can we switch to order menu :' , widget=forms.Select(choices = yes_no))
+    cuisines = forms.CharField(label='Enter the comma separated cuisines :')
+    verification_number = forms.IntegerField(label='Enter the number for verification :')
     
