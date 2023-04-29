@@ -2,10 +2,10 @@ from django import forms
 from django.db import connection
  
 with connection.cursor() as cursor:
-    cursor.execute("SELECT * FROM country_currency")
+    cursor.execute("SELECT * FROM country_currency order by country_name asc")
     countries = cursor.fetchall()
 with connection.cursor() as cursor:
-    cursor.execute("SELECT * FROM City")
+    cursor.execute("SELECT * FROM City order by city_id asc")
     cities = cursor.fetchall()
 ccountry=[('Select','Select')]+[(country[0],country[0]) for country in countries]
 ccity=[('Select','Select')]+[(city[0],city[0]) for city in cities]
@@ -55,10 +55,10 @@ class LocationForm(forms.Form):
     longitude = forms.FloatField(label = 'Enter your longitude') 
 
 with connection.cursor() as cursor:
-    cursor.execute("SELECT * FROM Meal_type_details")
+    cursor.execute("SELECT * FROM Meal_type_details order by meal_type_id asc")
     meals = cursor.fetchall()
 with connection.cursor() as cursor:
-    cursor.execute("SELECT distinct cuisine_id FROM food")
+    cursor.execute("SELECT distinct cuisine_id FROM food order by cuisine_id")
     cuisines = cursor.fetchall()
 cveg=[('Select','Select'),('V','V'),('NV','NV')]
 ccuisine=[('Select','Select')]+[(cuisine[0],cuisine[0]) for cuisine in cuisines]
