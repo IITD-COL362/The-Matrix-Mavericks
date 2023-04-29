@@ -607,7 +607,7 @@ def add_restaurant(request):
 		form = AddRest(request.POST)
 		if form.is_valid():
 			with connection.cursor() as cursor:
-				cursor.execute("SELECT MAX(RESTAURANT_ID) FROM MEAL")
+				cursor.execute("SELECT MAX(RESTAURANT_ID) FROM RESTAURANT")
 				curr_max = cursor.fetchone()[0]
 			next_max = curr_max+1
 			restaurant_name = form.cleaned_data['name']

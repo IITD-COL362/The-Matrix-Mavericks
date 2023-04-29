@@ -7,7 +7,7 @@
 	<style>
 		h1 {
 			font-family: 'Caveat', cursive;
-			font-size: 10em;
+			font-size: 5em;
 			font-weight: bold;
 			text-align: center;
 			margin-top: 50px;
@@ -30,7 +30,7 @@
 		}
 
 		thead th {
-			text-align: left;
+			text-align: center;
 			background-color: #F6C90E;
 			color: #FFFFFF;
 			padding: 8px;
@@ -43,11 +43,23 @@
 		}
 
 		tbody tr:nth-child(even) {
-			background-color: #f2f2f2;
+			background-color: #f9e7a0;
+		}
+
+		tbody tr:nth-child(odd) {
+			
+			background-color: #f9f0d9;
 		}
 
 		tbody tr:hover {
-			background-color: #ddd;
+			background-color: #f7fdd4;
+		}
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f7ebbc;
+			color: #333;
+			padding: 50px;
+			text-align: center;
 		}
 	</style>
 </head>
@@ -55,7 +67,7 @@
 	<h1>Trending Page</h1>
 	<div class="container">
 		<div>
-			<h2>Today's Trending Restaurants</h2>
+			<h3>Today's Trending Restaurants</h3>
 			<table>
 				<thead>
 					<tr>
@@ -75,7 +87,7 @@
 			</table>
 		</div>
 		<div>
-			<h2>Today's Trending Dishes</h2>
+			<h3>Today's Trending Dishes</h3>
 			<table>
 				<thead>
 					<tr>
@@ -94,7 +106,7 @@
 			</table>
 		</div>
 		<div>
-			<h2>Today's Trending Meal Types</h2>
+			<h3>Today's Trending Meal Types</h3>
 			<table>
 				<thead>
 					<tr>
@@ -113,7 +125,7 @@
 			</table>
 		</div>
 		<div>
-			<h2>Today's Trending Cuisines</h2>
+			<h3>Today's Trending Cuisines</h3>
 			<table>
 				<thead>
 					<tr>
