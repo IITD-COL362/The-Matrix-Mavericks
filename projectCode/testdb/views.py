@@ -1,8 +1,9 @@
 from django.shortcuts import render
 from django.db import connection
 from django.utils import timezone, dateformat
-from .forms import MealCountForm,RestForm,FoodForm,MixForm, AddMealForm , UpdateWeightForm, UpdateAddressForm, UpdateCityForm, UpdateMailidForm, UpdatePhonenumberForm , LocationForm, AddRating
+from .forms import MealCountForm,RestForm,FoodForm,MixForm, AddMealForm , UpdateWeightForm, UpdateAddressForm, UpdateCityForm, UpdateMailidForm, UpdatePhonenumberForm , LocationForm, AddRating , AddRest
 import datetime
+import math
 
 def city_list(request):
 	with connection.cursor() as cursor:
@@ -216,10 +217,10 @@ fname='Chokhi Dhani'
 fcity='Jaipur'
 favgcost1=0
 favgcost2=100
-fhtb='YES'
-fhod='YES'
-fidn='YES'
-fstom='YES'
+fhtb='Yes'
+fhod='Yes'
+fidn='Yes'
+fstom='Yes'
 frating=1
 fvotes=100
 fcountry='India'
@@ -592,4 +593,48 @@ def rate_restaurant(request,restaurant_id):
 	else:
 		form = AddRating()
 	return render(request,'rating.html',{'form':form})
+
+def check_prime(a):
+	b = math.floor(math.sqrt(a))
+	for i in range(2,b+1):
+		if(a%i==0):
+			return False
+	return True
+
+
+def add_restaurant(request):
+	if request.method == 'POST':
+		form = AddRest(request.POST)
+		if form.is_valid():
+			with connection.cursor() as cursor:
+				cursor.execute("SELECT MAX(RESTAURANT_ID) FROM MEAL")
+				curr_max = cursor.fetchone()[0]
+			next_max = curr_max+1
+			restaurant_name = form.cleaned_data['name']
+			city = form.cleaned_data['city']
+			address = form.cleaned_data['address']
+			latitude = form.cleaned_data['latitude']
+			longitude = form.cleaned_data['longitude']
+			avg_cost_for_two = form.cleaned_data['avg_cost_for_two']
+			htb = form.cleaned_data['htb']
+			hod = form.cleaned_data['hod']
+			idn = form.cleaned_data['idn']
+			stom = form.cleaned_data['stom']
+			cuisines = form.cleaned_data['cuisines']
+			cuisines_list = cuisines.split(',')
+			verification_number = form.cleaned_data['verification_number']
+			if(check_prime(verification_number)):
+				with connection.cursor() as cursor:
+					cursor.execute(f"INSERT INTO RESTAURANT VALUES ({next_max},'{restaurant_name}','{city}','{address}',{longitude},{latitude},{avg_cost_for_two},'{htb}','{hod}','{idn}','{stom}',0,0)")
+				for i in range(0,len(cuisines_list)):
+					with connection.cursor() as cursor:
+						cursor.execute(f"INSERT INTO RESTAURANT_CUISINE VALUES ({next_max},'{cuisines_list[i]}')")
+				return render(request, 'successful.html')
+			else:
+				return render(request,'verification.html')
+	else:
+		form = AddRest()
+	return render(request, 'add_rest.html', {'form': form})
+
+
 	 
