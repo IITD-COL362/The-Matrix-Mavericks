@@ -625,7 +625,7 @@ def add_restaurant(request):
 			verification_number = form.cleaned_data['verification_number']
 			if(check_prime(verification_number)):
 				with connection.cursor() as cursor:
-					cursor.execute(f"INSERT INTO RESTAURANT VALUES ({next_max},'{restaurant_name}','{city}','{address}',{latitude},{longitude},{avg_cost_for_two},'{htb}','{hod}','{idn}','{stom}',0,0)")
+					cursor.execute(f"INSERT INTO RESTAURANT VALUES ({next_max},'{restaurant_name}','{city}','{address}',{longitude},{latitude},{avg_cost_for_two},'{htb}','{hod}','{idn}','{stom}',0,0)")
 				for i in range(0,len(cuisines_list)):
 					with connection.cursor() as cursor:
 						cursor.execute(f"INSERT INTO RESTAURANT_CUISINE VALUES ({next_max},'{cuisines_list[i]}')")
