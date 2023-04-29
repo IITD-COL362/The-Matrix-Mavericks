@@ -67,12 +67,12 @@
       display: grid;
       grid-template-columns: repeat(1fr);
       grid-gap: 20px;
-      max-width: 700px;
+      max-width: 1200px;
       margin: 0 auto;
     }
 
     table {
-      max-width: 700px;
+      max-width: 1200px;
       margin: 0 auto;
       width: 100%;
       border-collapse: collapse;
@@ -123,15 +123,21 @@
         <table>
             <thead>
               <tr>
-                <th>Restaurant id</th>
                 <th>Name</th>
+                <th>City</th>
+                <th>Address</th>
+                <th>Rating</th>
+                <th>Number of ratings</th>
               </tr>
             </thead>
             <tbody>
               {% for restaurant in restaurants %}
                 <tr>
-                  <td>{{ restaurant.0 }}</td>
                   <td><a href="../restaurants/{{restaurant.0}}">{{ restaurant.1 }}</a></td>
+                  <td>{{ restaurant.2 }}</td>
+                  <td>{{ restaurant.3 }}</td>
+                  <td>{{ restaurant.11 }}</td>
+                  <td>{{ restaurant.12 }}</td>
                 </tr>
               {% endfor %}
             </tbody>
