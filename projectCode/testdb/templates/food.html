@@ -122,17 +122,21 @@
         <table>
             <thead>
               <tr>
-                <th>food id</th>
-                <th>food name</th>
-                <th>cuisine</th>
+                <th>Food Name</th>
+                <th>Cuisine type</th>
+                <th>Meal type</th>
+                <th>Veg/Non-Veg</th>
+                <th>Expected Price</th>
               </tr>
             </thead>
             <tbody>
               {% for food in foods %}
                 <tr>
-                  <td>{{ food.0 }}</td>
                   <td>{{ food.1 }}</td>
                   <td>{{ food.2 }}</td>
+                  <td>{{ food.8 }}</td>
+                  <td>{{ food.9 }}</td>
+                  <td>{{ food.10 }}</td>
                 </tr>
               {% endfor %}
             </tbody>
