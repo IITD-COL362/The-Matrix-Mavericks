@@ -1,0 +1,148 @@
+<!-- trenfing.html -->
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Restaurant Tables</title>
+	<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+	<style>
+		h1 {
+			font-family: 'Caveat', cursive;
+			font-size: 5em;
+			font-weight: bold;
+			text-align: center;
+			margin-top: 50px;
+			margin-bottom: 30px;
+			color: #F6C90E;
+		}
+
+		.container {
+			display: grid;
+			grid-template-columns: repeat(2, 1fr);
+			grid-gap: 20px;
+			max-width: 1200px;
+			margin: 0 auto;
+		}
+
+		table {
+			width: 100%;
+			border-collapse: collapse;
+			margin-bottom: 20px;
+		}
+
+		thead th {
+			text-align: center;
+			background-color: #F6C90E;
+			color: #FFFFFF;
+			padding: 8px;
+			font-weight: bold;
+		}
+
+		tbody td {
+			border: 1px solid #ddd;
+			padding: 8px;
+		}
+
+		tbody tr:nth-child(even) {
+			background-color: #f9e7a0;
+		}
+
+		tbody tr:nth-child(odd) {
+			
+			background-color: #f9f0d9;
+		}
+
+		tbody tr:hover {
+			background-color: #f7fdd4;
+		}
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #f7ebbc;
+			color: #333;
+			padding: 50px;
+			text-align: center;
+		}
+	</style>
+</head>
+<body>
+	<h1>Trending Page</h1>
+	<div class="container">
+		<div>
+			<h3>Today's Trending Restaurants</h3>
+			<table>
+				<thead>
+					<tr>
+						<th>Restaurant Name</th>
+						<th>Number of Tracked Meals</th>
+					</tr>
+				</thead>
+				<tbody>
+					{% for tup in top5a %}
+					<tr>
+						<td><a href="../restaurants/{{tup.0}}">{{ tup.1 }}</a></td>
+						<!-- <td>{{ tup.1 }}</td> -->
+						<td>{{ tup.2 }}</td>
+					</tr>
+					{% endfor %}
+				</tbody>
+			</table>
+		</div>
+		<div>
+			<h3>Today's Trending Dishes</h3>
+			<table>
+				<thead>
+					<tr>
+						<th>Dish Name</th>
+						<th>Number of Tracked Meals</th>
+					</tr>
+				</thead>
+				<tbody>
+					{% for tup in top5b %}
+					<tr>
+						<td>{{ tup.1 }}</td>
+						<td>{{ tup.2 }}</td>
+					</tr>
+					{% endfor %}
+				</tbody>
+			</table>
+		</div>
+		<div>
+			<h3>Today's Trending Meal Types</h3>
+			<table>
+				<thead>
+					<tr>
+						<th>Meal Type Name</th>
+						<th>Number of Tracked Meals</th>
+					</tr>
+				</thead>
+				<tbody>
+					{% for tup in top5c %}
+					<tr>
+						<td>{{ tup.0 }}</td>
+						<td>{{ tup.1 }}</td>
+					</tr>
+					{% endfor %}
+				</tbody>
+			</table>
+		</div>
+		<div>
+			<h3>Today's Trending Cuisines</h3>
+			<table>
+				<thead>
+					<tr>
+						<th>Cuisine Name</th>
+						<th>Number of Tracked Meals</th>
+					</tr>
+				</thead>
+				<tbody>
+					{% for tup in top5d %}
+					<tr>
+						<td>{{ tup.0 }}</td>
+						<td>{{ tup.1 }}</td>
+					</tr>
+					{% endfor %}
+				</tbody>
+			</table>
+		</div>
+	</div>
+</body>
+</html>

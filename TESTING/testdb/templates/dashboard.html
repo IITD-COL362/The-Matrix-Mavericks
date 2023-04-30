@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>User Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Helvetica Neue', sans-serif;
+      background-color: #f7ebbc;
+      color: #333333;
+      margin: 0;
+      padding: 0;
+    }
+    h1 {
+	  font-family: 'Caveat', cursive;
+      font-size: 50px;
+      text-align: center;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+    h2 {
+      font-size: 20px;
+      margin-top: 20px;
+      margin-bottom: 10px;
+    }
+    p {
+      font-size: 18px;
+      margin-bottom: 20px;
+      line-height: 1.5;
+    }
+    a {
+      display: inline-block;
+      padding: 10px 20px;
+      background-color: #7BA23F;
+      color: #ffffff;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: background-color 0.3s ease-in-out;
+    }
+    a:hover {
+      background-color: #5C7D2A;
+    }
+    
+    /* Box styles */
+    .box {
+      background-color: #fbd147;
+      box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      padding: 20px;
+      margin-bottom: 30px;
+    }
+    
+    .left-box {
+      float: left;
+      width: calc(50% - 15px);
+      margin-right: 30px;
+    }
+    
+    .right-box {
+      float: right;
+      width: calc(50% - 15px);
+      margin-left: 30px;	
+    }
+    
+    /* Center the buttons */
+    .button-container {
+      display: flex;
+      justify-content: center;
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <h1>Welcome to your dashboard</h1>
+  <div class="left-box box">
+    <h2>Tracked Meals</h2>
+    <p>You have tracked {{ tracked_meals }} meals in the past week </p>
+  </div>
+  <div class="right-box box">
+    <h2>User Score</h2>
+    <p>Your score for the past week is {{ user_score }} </p>
+  </div>
+  <div class="left-box box">
+    <h2>Average Meals</h2>
+    <p>Your average meals for the past week is {{ avg_meals }}</p>
+  </div>
+  <div class="button-container">
+    <h2><a href="add_meal/">Add a meal</a></h2>
+	<span style="margin: 0 80px;"> </span>
+	<h2><a href="stats/">Detailed meal statistics</a></h2>
+	<span style="margin: 0 80px;"> </span>
+	<h2><a href="/accounts/login/testdb/">Back to Homepage</a></h2>
+  </div>
+</body>
+</html>
