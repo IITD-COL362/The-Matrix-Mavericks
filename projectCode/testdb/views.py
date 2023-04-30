@@ -370,6 +370,11 @@ def filter_restaurant(request):
 			fhod = form.cleaned_data['hod']
 			fidn = form.cleaned_data['idn']
 			fstom = form.cleaned_data['stom']
+			fname=form.cleaned_data['name']
+			if (fname=='') :
+				is_name=True
+			else :
+				is_name=False
 			if (fcity=='Select') :
 				is_city=True
 			else :
@@ -444,6 +449,11 @@ def filter_mix(request) :
 			fsodium=form.cleaned_data['sodium']
 			fveg=form.cleaned_data['veg']
 			fmeal=form.cleaned_data['meal']
+			fname=form.cleaned_data['name']
+			if (fname=='') :
+				is_name=True
+			else :
+				is_name=False
 			if (fcity=='Select') :
 				is_city=True
 			else :
