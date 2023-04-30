@@ -168,7 +168,7 @@ def update_mailid(request):
 		if form.is_valid():
 			new_mailid = form.cleaned_data['new_mailid']
 			with connection.cursor() as cursor:
-				cursor.execute(f"update user_data set mailid = '{new_mailid}' where user_id='{personid}'")
+				cursor.execute(f"update user_data set mail_id = '{new_mailid}' where user_id='{personid}'")
 			return render(request,'successful.html',{'form':form})
 	else:
 		form = UpdateMailidForm()

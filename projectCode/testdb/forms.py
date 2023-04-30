@@ -1,5 +1,7 @@
 from django import forms
 from django.db import connection
+from django.core.validators import EmailValidator
+from django.core.validators import RegexValidator
  
 with connection.cursor() as cursor:
     cursor.execute("SELECT * FROM country_currency order by country_name asc")
@@ -35,14 +37,40 @@ class MealCountForm(forms.Form):
 class AddMealForm(forms.Form):
     meal_type = forms.CharField(label = 'What type of meal did you eat ? ',widget=forms.Select(choices = MEAL_CHOICES))
     
+
 class UpdateWeightForm(forms.Form):
     new_weight = forms.IntegerField(label='Enter the new weight')
+    
+    def clean_new_weight(self):
+        new_weight = self.cleaned_data['new_weight']
+        if new_weight < 0:
+            raise forms.ValidationError("Weight cannot be negative")
+        return new_weight
     
 class UpdateMailidForm(forms.Form):
     new_mailid = forms.CharField(label='Enter the new mail id')
     
+    def clean_new_mailid(self):
+        new_mailid = self.cleaned_data['new_mailid']
+        validator = EmailValidator(message='Invalid email address')
+        try:
+            validator(new_mailid)
+        except forms.ValidationError:
+            raise forms.ValidationError("Invalid email address")
+        return new_mailid
+    
 class UpdatePhonenumberForm(forms.Form):
-    new_phonenumber = forms.IntegerField(label='Enter the new phone number')
+    new_phonenumber = forms.CharField(label='Enter the new phone number')
+    
+    def clean_new_phonenumber(self):
+        new_phonenumber = self.cleaned_data['new_phonenumber']
+        pattern = r'^\+?1?\d{9,15}$'  # Phone number regex pattern
+        validator = RegexValidator(pattern=pattern, message='Invalid phone number')
+        try:
+            validator(new_phonenumber)
+        except forms.ValidationError:
+            raise forms.ValidationError("Invalid phone number")
+        return new_phonenumber
     
 class UpdateCityForm(forms.Form):
     new_city = forms.CharField(label='Enter the new city')
@@ -51,8 +79,20 @@ class UpdateAddressForm(forms.Form):
     new_address = forms.CharField(label='Enter the new address')
     
 class LocationForm(forms.Form):
-    latitude = forms.FloatField(label = 'Enter your latitude' )
-    longitude = forms.FloatField(label = 'Enter your longitude') 
+    latitude = forms.FloatField(label='Enter your latitude')
+    longitude = forms.FloatField(label='Enter your longitude')
+    
+    def clean_latitude(self):
+        latitude = self.cleaned_data['latitude']
+        if not (-90 <= latitude <= 90):
+            raise forms.ValidationError("Invalid latitude")
+        return latitude
+    
+    def clean_longitude(self):
+        longitude = self.cleaned_data['longitude']
+        if not (-180 <= longitude <= 180):
+            raise forms.ValidationError("Invalid longitude")
+        return longitude
 
 with connection.cursor() as cursor:
     cursor.execute("SELECT * FROM Meal_type_details order by meal_type_id asc")
@@ -111,7 +151,14 @@ class MixForm(forms.Form):
     stom = forms.CharField(label= 'switch to order menu' ,required = False, widget=forms.Select(choices = yes_no))
     
 class AddRating(forms.Form):
-    rating = forms.IntegerField(label='Enter the rating out of 5 :')
+    rating = forms.IntegerField(label='Enter the rating out of 5:')    
+    def clean_rating(self):
+        rating = self.cleaned_data['rating']
+        if not isinstance(rating, int):
+            raise forms.ValidationError("Rating must be an integer.")
+        if rating < 0 or rating > 5:
+            raise forms.ValidationError("Rating must be an integer between 0 and 5.")
+        return rating
     
 class AddRest(forms.Form):
     name = forms.CharField(label='Enter the name of restaurant :')
