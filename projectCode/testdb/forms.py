@@ -14,8 +14,8 @@ ccity=[('Select','Select')]+[(city[0],city[0]) for city in cities]
 yes_no=[('Select','Select'),('Yes','Yes'),('No','No')]
 rating_choices=[(0,0),(1,1),(2,2),(3,3),(4,4),(5,5)]
 votes_choices=[(0,0),(100,100),(200,200),(300,300),(400,400),(500,500),(1000,1000),(10000,10000)]
-lavg=[(0,0),(100,100),(200,200),(300,300),(400,400),(500,500),(1000,1000),(10000,10000)]
-havg=[(100000,100000),(100,100),(200,200),(300,300),(400,400),(500,500),(1000,1000),(10000,10000)]
+lavg=[(0,0),(100,100),(200,200),(300,300),(400,400),(500,500),(1000,1000),(10000,10000),(100000,100000)]
+havg=[(10000000,10000000),(100,100),(200,200),(300,300),(400,400),(500,500),(1000,1000),(10000,10000),(100000,100000)]
 
 MEAL_CHOICES= [
     ('Fruits', 'Fruits'),
@@ -108,6 +108,7 @@ crange=[('Select','Select'),('low','low'),('medium','medium'),('high','high')]
 
 # creating a form
 class RestForm(forms.Form):
+    name = forms.CharField(label='Enter the name of restaurant :',required=False)
     country = forms.CharField(label = 'country',required = False,widget=forms.Select(choices = ccountry))
     city = forms.CharField(label = 'city',required = False,widget=forms.Select(choices = ccity))
     avgcost1 = forms.IntegerField(label = 'minimum average food cost for two persons' ,required = False, widget=forms.Select(choices= lavg))
@@ -139,6 +140,7 @@ class MixForm(forms.Form):
     protein = forms.CharField(label = 'minimum protein per 100g in grams' ,required = False, widget=forms.Select(choices = crange))
     fat = forms.CharField(label = 'maximum fat content per 100g' ,required = False, widget=forms.Select(choices= crange))
     sodium = forms.CharField(label = 'minimum sodium content per 100g in milligrams' ,required = False, widget=forms.Select(choices= crange))
+    name = forms.CharField(label='Enter the name of restaurant :',required=False)
     country = forms.CharField(label = 'country',required = False,widget=forms.Select(choices = ccountry))
     city = forms.CharField(label = 'city',required = False,widget=forms.Select(choices = ccity))
     avgcost1 = forms.IntegerField(label = 'minimum average food cost for two persons' ,required = False, widget=forms.Select(choices= lavg))
