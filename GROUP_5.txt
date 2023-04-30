@@ -1,0 +1,2 @@
+Git clone command for http : https://github.com/IITD-COL362/The-Matrix-Mavericks.git
+Git clone command for ssh : git@github.com:IITD-COL362/The-Matrix-Mavericks.git
