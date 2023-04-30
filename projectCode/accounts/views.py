@@ -16,7 +16,7 @@ def signup_view(request):
             name = form.cleaned_data.get('name')
             address = form.cleaned_data.get('address')
             city_id = form.cleaned_data.get('city_id')
-            mail_id = form.cleaned_data.get('mail_id')
+            mail_id = form.cleaned_data.get('email')
             phone_number = form.cleaned_data.get('phone_number')
             birthday = form.cleaned_data.get('birthday')
             sex = form.cleaned_data.get('sex')

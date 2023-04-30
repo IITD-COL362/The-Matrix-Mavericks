@@ -40,17 +40,17 @@ class SignUpForm(UserCreationForm):
         )
     )
 
-    mail_id = forms.CharField(
-        max_length=255,
-        label='',
-        required=True,
-        widget=forms.TextInput(
-            attrs={
-                "placeholder": "Mail ID",
-                "class": "form-control"
-            }
-        )
-    )
+    # mail_id = forms.CharField(
+    #     max_length=255,
+    #     label='',
+    #     required=True,
+    #     widget=forms.TextInput(
+    #         attrs={
+    #             "placeholder": "Mail ID",
+    #             "class": "form-control"
+    #         }
+    #     )
+    # )
 
     phone_number = forms.IntegerField(
         label='',
