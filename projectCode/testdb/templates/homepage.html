@@ -6,16 +6,39 @@
 	<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
 	<style>
 		body {
-			background-color: #85FFBD;
-background-image: linear-gradient(90deg, #85FFBD 0%, #FFFB7D 100%);
+			background-image: url("{% static 'back.jpg' %}");
+			background-size: cover;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
 		}
 		h1 {
 			font-family: 'Palatino', cursive;
 			color: #60915c;
-			font-size: 4em;
+			font-size: 10em;
+			font-weight: bold;
+			text-align: center;
+			margin-top: 100	px;
+			margin-bottom: 0px;
+			text-shadow: 2px 2px #232323;
+		}
+		h3 {
+			font-family: 'Palatino', cursive;
+			color: #60915c;
+			font-size: 2.5em;
 			font-weight: bold;
 			text-align: center;
 			margin-top: 50px;
+			margin-bottom: 30px;
+			text-shadow: 2px 2px #232323;
+		}
+		h4 {
+			font-family: 'Palatino', cursive;
+			color: #60915c;
+			font-size: 1.8em;
+			font-weight: bold;
+			text-align: center;
+			margin-top: -40px;
 			margin-bottom: 30px;
 			text-shadow: 2px 2px #232323;
 		}
@@ -76,15 +99,15 @@ background-image: linear-gradient(90deg, #85FFBD 0%, #FFFB7D 100%);
 	</style>
 </head>
 <body>
-	<img src="{% static 'foodle-logo.png' %}" alt="Logo">
-    <h1>By Team Matrix Mavericks</h1>
+	<h1>Foodle</h1>
+	<i><h4>your perfect meal partner</h4></i>
     <nav>
         <ul>
           <li><a href="/accounts/login/">Login</a></li>
           <li><a href="/accounts/signup/">Sign Up</a></li>
         </ul>
     </nav>
-    <h5>Contact Us : Vishwas Kalani, Nischay Diwan, Aman Bansal (IIT DELHI)</h5>
+    <h3>By Team Matrix Mavericks</h3>
 </body>
 </html>
 
