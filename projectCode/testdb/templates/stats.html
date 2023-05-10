@@ -6,13 +6,13 @@
 	<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
 	<style>
 		h1 {
-			font-family: 'Caveat', cursive;
+			font-family: 'Palatino', cursive;
+			color: #60915c;
 			font-size: 5em;
 			font-weight: bold;
 			text-align: center;
 			margin-top: 50px;
 			margin-bottom: 30px;
-			color: #F6C90E;
 		}
 
 		.container {
@@ -30,25 +30,26 @@
 		}
 
 		thead th {
-			text-align: center;
-			background-color: #F6C90E;
-			color: #FFFFFF;
-			padding: 8px;
-			font-weight: bold;
-		}
-
-		tbody td {
-			border: 1px solid #ddd;
-			padding: 8px;
-		}
-
+            text-align: center;
+            background-color: #579b84;
+            color: #FFFFFF;
+            padding: 8px;
+            font-weight: bold;
+        }
+    
+        tbody td {
+            text-align: center;
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+    
 		tbody tr:nth-child(even) {
-			background-color: #f9e7a0;
+			background-color: #d4f7e4;
 		}
 
 		tbody tr:nth-child(odd) {
 			
-			background-color: #f9f0d9;
+			background-color: #ffffff;
 		}
 
 		tbody tr:hover {
@@ -56,7 +57,8 @@
 		}
 		body {
 			font-family: Arial, sans-serif;
-			background-color: #f7ebbc;
+			background-color: #85FFBD;
+background-image: linear-gradient(90deg, #85FFBD 0%, #FFFB7D 100%);
 			color: #333;
 			padding: 50px;
 			text-align: center;
@@ -92,32 +94,32 @@
 		datasets: [{
 			data: [{% for element in data %}{{ element.1 }}, {% endfor %}],
 			backgroundColor: [
-				'rgba(255, 99, 132, 0.7)',
-				'rgba(54, 162, 235, 0.7)',
-				'rgba(255, 206, 86, 0.7)',
-				'rgba(75, 192, 192, 0.7)',
-				'rgba(153, 102, 255, 0.7)',
-				'rgba(255, 159, 64, 0.7)',
-				'rgba(128, 0, 0, 0.7)',
-				'rgba(0, 128, 0, 0.7)',
-				'rgba(0, 0, 128, 0.7)',
-				'rgba(128, 128, 0, 0.7)',
-				'rgba(128, 0, 128, 0.7)',
-				'rgba(0, 128, 128, 0.7)'
+				'rgba(255, 99, 132, 0.5)',
+				'rgba(54, 162, 235, 0.5)',
+				'rgba(255, 206, 86, 0.5)',
+				'rgba(75, 192, 192, 0.5)',
+				'rgba(153, 102, 255, 0.5)',
+				'rgba(255, 159, 64, 0.5)',
+				'rgba(128, 0, 0, 0.5)',
+				'rgba(0, 128, 0, 0.5)',
+				'rgba(0, 0, 128, 0.5)',
+				'rgba(128, 128, 0, 0.5)',
+				'rgba(128, 0, 128, 0.5)',
+				'rgba(0, 128, 128, 0.5)'
 			],
 			borderColor: [
-				'rgba(255, 99, 132, 1)',
-				'rgba(54, 162, 235, 1)',
-				'rgba(255, 206, 86, 1)',
-				'rgba(75, 192, 192, 1)',
-				'rgba(153, 102, 255, 1)',
-				'rgba(255, 159, 64, 1)',
-				'rgba(128, 0, 0, 1)',
-				'rgba(0, 128, 0, 1)',
-				'rgba(0, 0, 128, 1)',
-				'rgba(128, 128, 0, 1)',
-				'rgba(128, 0, 128, 1)',
-				'rgba(0, 128, 128, 1)'
+				'rgba(255, 99, 132, 0.8)',
+				'rgba(54, 162, 235, 0.8)',
+				'rgba(255, 206, 86, 0.8)',
+				'rgba(75, 192, 192, 0.8)',
+				'rgba(153, 102, 255, 0.8)',
+				'rgba(255, 159, 64, 0.8)',
+				'rgba(128, 0, 0, 0.8)',
+				'rgba(0, 128, 0, 0.8)',
+				'rgba(0, 0, 128, 0.8)',
+				'rgba(128, 128, 0, 0.8)',
+				'rgba(128, 0, 128, 0.8)',
+				'rgba(0, 128, 128, 0.8)'
 			],
 			borderWidth: 1
 		}]
