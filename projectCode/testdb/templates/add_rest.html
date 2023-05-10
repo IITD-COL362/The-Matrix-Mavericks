@@ -13,20 +13,21 @@
 	}
     body {
       font-family: Arial, sans-serif;
-      background-color: #f7ebbc;
+      background-color: #85FFBD;
+background-image: linear-gradient(90deg, #85FFBD 0%, #FFFB7D 100%);
       color: #333;
       padding: 50px;
       text-align: center;
     }
 
     h1 {
-      font-family: 'Caveat', cursive;
+      font-family: 'Palatino', cursive;
       font-size: 3em;
       font-weight: bold;
       text-align: center;
       margin-top: 50px;
       margin-bottom: 30px;
-      color: #F6C90E;
+      color: #60915c;
 	  opacity: 0;
 	  animation-name: fadeIn;
 	  animation-duration: 0.6s;
@@ -35,11 +36,13 @@
     }
 
     form {
+      max-width: 500px;
+      margin: 0 auto;
       display: flex;
       flex-direction: column;
       align-items: center;
       padding: 40px;
-      background-color: #F6C90E;
+      background-color: #ffffff;
       box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
       border-radius: 10px;
 	  opacity: 0;
@@ -50,6 +53,7 @@
     }
 
     input[type="text"], select {
+      background-color: #dbe8ea;
       margin: 10px 0;
       padding: 10px;
       font-size: 16px;
@@ -63,6 +67,7 @@
     }
 
 	input[type="Number"], select {
+    background-color: #dbe8ea;
       margin: 10px 0;
       padding: 10px;
       font-size: 16px;
@@ -99,18 +104,18 @@
     }
 
     label {
-      font-size: 18px;
-      font-weight: bold;
-      margin-bottom: 10px;
-      color: #333;
-      text-align: left;
-      display: block;
-	  opacity: 0;
+        font-size: 18px;
+        /* font-weight: bold; */
+        margin-bottom: 10px;
+        color: #333;
+        text-align: left;
+        display: block;
+		opacity: 0;
 		animation-name: fadeIn;
 		animation-duration: 0.6s;
 		animation-timing-function: ease-in-out;
 		animation-fill-mode: forwards;
-    }
+      }
 
     select {
       width: 100%;
