@@ -6,6 +6,14 @@
 	{% endfor %}
 	<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
 	<style>
+		@keyframes fadeIn {
+			from {
+				opacity: 0;
+			}
+			to {
+				opacity: 1;
+			}
+		}
 		h1 {
 			font-family: 'Caveat', cursive;
 			font-size: 4em;
@@ -14,6 +22,11 @@
 			margin-top: 50px;
 			margin-bottom: 30px;
 			color: #F6C90E;
+			opacity: 0;
+		animation-name: fadeIn;
+		animation-duration: 1s;
+		animation-timing-function: ease-in-out;
+		animation-fill-mode: forwards;
 		}
 		body {
 			font-family: Arial, sans-serif;
@@ -29,11 +42,21 @@
 			background-color: #F6C90E;
 			box-shadow: 0px 0px 10px #ddd;
 			border-radius: 10px;
+			opacity: 0;
+		animation-name: fadeIn;
+		animation-duration: 1s;
+		animation-timing-function: ease-in-out;
+		animation-fill-mode: forwards;
 		}
 
 		p {
 			font-size: 18px;
 			margin-bottom: 10px;
+			opacity: 0;
+		animation-name: fadeIn;
+		animation-duration: 1s;
+		animation-timing-function: ease-in-out;
+		animation-fill-mode: forwards;
 		}
 
         ul {
@@ -48,6 +71,11 @@
         }
 		li {
 			margin-right: 20px;
+			opacity: 0;
+		animation-name: fadeIn;
+		animation-duration: 1s;
+		animation-timing-function: ease-in-out;
+		animation-fill-mode: forwards;
 		}
 
 		a {
@@ -62,6 +90,11 @@
 			text-align: center;
 			text-decoration: none;
 			transition: background-color 0.3s;
+			opacity: 0;
+		animation-name: fadeIn;
+		animation-duration: 1s;
+		animation-timing-function: ease-in-out;
+		animation-fill-mode: forwards;
 		}
 
 		a:hover {

@@ -6,6 +6,14 @@
 	{% endfor %}
     <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap" rel="stylesheet">
     <style>
+		@keyframes fadeIn {
+			from {
+				opacity: 0;
+			}
+			to {
+				opacity: 1;
+			}
+		}
         h1 {
             font-family: 'Caveat', cursive;
             font-size: 5em;
@@ -14,17 +22,32 @@
             margin-top: 50px;
             margin-bottom: 30px;
             color: #F6C90E;
+			opacity: 0;
+		animation-name: fadeIn;
+		animation-duration: 1s;
+		animation-timing-function: ease-in-out;
+		animation-fill-mode: forwards;
         }
     
         .container {
             max-width: 2000px;
             margin: 0 auto;
+			opacity: 0;
+		animation-name: fadeIn;
+		animation-duration: 1s;
+		animation-timing-function: ease-in-out;
+		animation-fill-mode: forwards;
         }
     
         table {
             width: 100%;
             border-collapse: collapse;
             margin-bottom: 20px;
+			opacity: 0;
+		animation-name: fadeIn;
+		animation-duration: 1s;
+		animation-timing-function: ease-in-out;
+		animation-fill-mode: forwards;
         }
     
         thead th {
