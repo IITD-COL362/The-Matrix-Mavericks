@@ -27,7 +27,7 @@ def meal_count(request):
 
 def trending(request):
 	# meal_date = dateformat.format(timezone.now().date(),'\'Y-m-d\'')
-	meal_date = '\'2022-03-13\''
+	meal_date = dateformat.format(timezone.now() - datetime.timedelta(days=30),'\'Y-m-d\'')
 	with connection.cursor() as cursor:
 		cursor.execute(f"select restaurant.restaurant_id, restaurant.name, noo from (select restaurant_id,count(*) as noo from meal where meal.entry_type='Track' and meal.meal_date >= {meal_date} group by restaurant_id order by noo desc limit 5) as t, restaurant where restaurant.restaurant_id = t.restaurant_id")
 		top5a = cursor.fetchall()

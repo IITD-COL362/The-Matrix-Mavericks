@@ -24,9 +24,23 @@
       justify-content: center;
     }
 
-    li {
-      margin-right: 30px;
-    }
+	ul li {
+		margin-right: 30px;
+		opacity: 0;
+		animation-name: fadeIn;
+		animation-duration: 1s;
+		animation-timing-function: ease-in-out;
+		animation-fill-mode: forwards;
+	}
+
+	@keyframes fadeIn {
+		from {
+			opacity: 0;
+		}
+		to {
+			opacity: 1;
+		}
+	}
 
     a {
 			background-color: #F6C90E;
@@ -56,16 +70,22 @@
       margin-bottom: 30px;
       color: #F6C90E;
     }
-		h1 {
-			font-family: 'Caveat', cursive;
-			font-size: 4em;
-			font-weight: bold;
-			text-align: center;
-			margin-top: 50px;
-			margin-bottom: 30px;
-			color: #f8c910;
-			text-shadow: 2px 2px #232323;
-		}
+
+	h1 {
+		font-family: 'Caveat', cursive;
+		font-size: 4em;
+		font-weight: bold;
+		text-align: center;
+		margin-top: 50px;
+		margin-bottom: 30px;
+		color: #f8c910;
+		text-shadow: 2px 2px #232323;
+		opacity: 0;
+		animation-name: fadeIn;
+		animation-duration: 1s;
+		animation-timing-function: ease-in-out;
+		animation-fill-mode: forwards;
+	}
 
     .welcome {
       font-size: 24px;
