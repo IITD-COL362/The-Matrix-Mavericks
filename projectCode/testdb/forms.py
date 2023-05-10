@@ -64,8 +64,8 @@ class UpdatePhonenumberForm(forms.Form):
     
     def clean_new_phonenumber(self):
         new_phonenumber = self.cleaned_data['new_phonenumber']
-        pattern = r'^\+?1?\d{9,15}$'  # Phone number regex pattern
-        validator = RegexValidator(pattern=pattern, message='Invalid phone number')
+        regex = r'^\+?1?\d{9,15}$'  # Phone number regex pattern
+        validator = RegexValidator(regex=regex, message='Invalid phone number')
         try:
             validator(new_phonenumber)
         except forms.ValidationError:
